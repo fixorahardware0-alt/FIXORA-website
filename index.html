@@ -4,8 +4,601 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FIXORA - Engineered for Reliability | Premium Hardware Solutions</title>
-    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+:root {
+    --primary-orange: #FF6B35;
+    --dark-bg: #0f0f0f;
+    --dark-gray: #1a1a1a;
+    --medium-gray: #2a2a2a;
+    --light-gray: #f5f5f5;
+    --border-color: #e0ddd8;
+    --text-dark: #1a1a1a;
+    --text-light: #666666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navigation */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    border-bottom: 1px solid var(--border-color);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.logo-fixora {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, var(--text-dark) 0%, var(--text-dark) 70%, var(--primary-orange) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-divider {
+    color: var(--primary-orange);
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.logo-tagline {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.nav-menu a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-dark);
+    position: relative;
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-orange);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+.language-selector {
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid var(--border-color);
+}
+
+.language-selector select {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--text-dark);
+    padding: 0.25rem;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-image-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&h=800&fit=crop') center/cover;
+    z-index: 1;
+    opacity: 0.3;
+}
+
+.hero-image-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.8) 0%, rgba(74, 74, 74, 0.7) 50%, rgba(26, 26, 26, 0.9) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.hero-label {
+    display: block;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-orange);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Buttons */
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-orange);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #ff5722;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(255, 107, 53, 0.3);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: var(--primary-orange);
+}
+
+/* Sections */
+.section-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+}
+
+/* Projects Section */
+.projects {
+    background-color: white;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    overflow: hidden;
+    border-radius: 2px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-weight: 600;
+}
+
+.project-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* Company Section */
+.company {
+    background-color: #fafafa;
+}
+
+.company-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.company-image img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.company-info h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.company-info p {
+    font-size: 1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.values-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.values-list li {
+    padding: 0.8rem 0;
+    padding-left: 2rem;
+    position: relative;
+    color: var(--text-light);
+}
+
+.values-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-orange);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Team Section */
+.team {
+    background-color: white;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+}
+
+.team-card {
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.team-member-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.team-card p {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+.contact-badge {
+    background-color: var(--primary-orange);
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+/* Support Section */
+.support {
+    background-color: #fafafa;
+}
+
+.support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.support-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 2px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.support-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-6px);
+}
+
+.support-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.support-card ul {
+    list-style: none;
+}
+
+.support-card li {
+    padding: 0.6rem 0;
+    color: var(--text-light);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.support-card li:before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary-orange);
+}
+
+/* Contact Section */
+.contact {
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.contact-item {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
+    color: var(--primary-orange);
+}
+
+.contact-item p {
+    color: var(--text-light);
+    margin-bottom: 0.25rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-gray);
+    color: rgba(255, 255, 255, 0.9);
+    padding: 3rem 0 1rem;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-section h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-orange);
+    font-weight: 600;
+}
+
+.footer-section p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-section a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--primary-orange);
+}
+
+.footer-bottom {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    padding: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu { gap: 1rem; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero-buttons { flex-direction: column; }
+    .section-header h2 { font-size: 2rem; }
+    .company-content { grid-template-columns: 1fr; }
+    .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+    .hero { height: 350px; }
+    .hero h1 { font-size: 1.5rem; }
+    section { padding: 2.5rem 0; }
+    .section-header h2 { font-size: 1.4rem; }
+}
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -17,24 +610,19 @@
                 <span class="logo-tagline" data-en="Engineered for Reliability" data-es="Diseñado para Confiabilidad" data-fr="Conçu pour la Fiabilité"></span>
             </div>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#products" data-en="Products" data-es="Productos" data-fr="Produits"></a></li>
-                <li><a href="#solutions" data-en="Solutions" data-es="Soluciones" data-fr="Solutions"></a></li>
                 <li><a href="#projects" data-en="Projects" data-es="Proyectos" data-fr="Projets"></a></li>
+                <li><a href="#company" data-en="About" data-es="Acerca de" data-fr="À Propos"></a></li>
+                <li><a href="#team" data-en="Team" data-es="Equipo" data-fr="Équipe"></a></li>
                 <li><a href="#support" data-en="Support" data-es="Soporte" data-fr="Support"></a></li>
                 <li><a href="#contact" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
                 <li class="language-selector">
                     <select id="language" onchange="changeLanguage(this.value)">
-                        <option value="en">ENGLISH</option>
-                        <option value="es">ESPAÑOL</option>
-                        <option value="fr">FRANÇAIS</option>
+                        <option value="en">EN</option>
+                        <option value="es">ES</option>
+                        <option value="fr">FR</option>
                     </select>
                 </li>
             </ul>
-            <button class="menu-toggle" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
@@ -42,158 +630,12 @@
     <section class="hero">
         <div class="hero-image-bg"></div>
         <div class="hero-content">
-            <span class="hero-label" data-en="PREMIUM HARDWARE SOLUTIONS" data-es="SOLUCIONES DE HARDWARE PREMIUM" data-fr="SOLUTIONS MATÉRIEL PREMIUM"></span>
+            <span class="hero-label" data-en="PREMIUM HARDWARE FOR NORTH AMERICA" data-es="HARDWARE PREMIUM PARA AMÉRICA DEL NORTE" data-fr="MATÉRIEL PREMIUM POUR L'AMÉRIQUE DU NORD"></span>
             <h1 data-en="Engineered for Reliability" data-es="Diseñado para Confiabilidad" data-fr="Conçu pour la Fiabilité"></h1>
-            <p data-en="Strategic distribution network and premium quality hardware solutions for builders, contractors, and distributors across North America" data-es="Red de distribución estratégica y soluciones de hardware de calidad premium para constructores, contratistas y distribuidores en toda América del Norte" data-fr="Réseau de distribution stratégique et solutions matériel de qualité premium pour les constructeurs, entrepreneurs et distributeurs en Amérique du Nord"></p>
+            <p data-en="Trusted hardware distribution partner for residential, commercial, and renovation projects" data-es="Socio de distribución de hardware confiable para proyectos residenciales, comerciales y de renovación" data-fr="Partenaire de distribution de matériel de confiance pour les projets résidentiels, commerciaux et de rénovation"></p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary" data-en="Contact Sales" data-es="Contactar Ventas" data-fr="Contacter les Ventes"></a>
-                <a href="#solutions" class="btn btn-secondary" data-en="Explore Solutions" data-es="Explorar Soluciones" data-fr="Explorer les Solutions"></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Solutions Section (Market-Driven) -->
-    <section id="solutions" class="solutions">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 data-en="Solutions by Market" data-es="Soluciones por Mercado" data-fr="Solutions par Marché"></h2>
-                <p data-en="Tailored hardware solutions for your specific application" data-es="Soluciones de hardware personalizadas para su aplicación específica" data-fr="Solutions matériel adaptées à votre application spécifique"></p>
-            </div>
-
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">🏗️</div>
-                    <h3 data-en="Residential Construction" data-es="Construcción Residencial" data-fr="Construction Résidentielle"></h3>
-                    <p data-en="Premium hardware for new builds and high-end residential projects" data-es="Hardware premium para construcciones nuevas y proyectos residenciales de alta gama" data-fr="Matériel premium pour les nouvelles constructions et les projets résidentiels haut de gamme"></p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">🔨</div>
-                    <h3 data-en="Renovation & Remodeling" data-es="Renovación y Remodelación" data-fr="Rénovation et Remodelage"></h3>
-                    <p data-en="Quality upgrades for renovation and renovation projects" data-es="Mejoras de calidad para proyectos de renovación" data-fr="Mises à niveau de qualité pour les projets de rénovation"></p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">🏢</div>
-                    <h3 data-en="Commercial & Hospitality" data-es="Comercial y Hospitalidad" data-fr="Commercial et Hôtellerie"></h3>
-                    <p data-en="Specification-grade hardware for commercial environments" data-es="Hardware de grado de especificación para entornos comerciales" data-fr="Matériel de qualité de spécification pour les environnements commerciaux"></p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">🏛️</div>
-                    <h3 data-en="Institutional" data-es="Institucional" data-fr="Institutionnel"></h3>
-                    <p data-en="Durable hardware for educational and government facilities" data-es="Hardware duradero para instalaciones educativas y gubernamentales" data-fr="Matériel durable pour les installations éducatives et gouvernementales"></p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">🏠</div>
-                    <h3 data-en="Multifamily Housing" data-es="Vivienda Multifamiliar" data-fr="Logement Multifamilial"></h3>
-                    <p data-en="Reliable solutions for apartments and multi-unit housing" data-es="Soluciones confiables para apartamentos y viviendas multifamiliares" data-fr="Solutions fiables pour les appartements et les logements multi-unités"></p>
-                </div>
-                <div class="solution-card">
-                    <div class="solution-icon">🔐</div>
-                    <h3 data-en="Specialized Applications" data-es="Aplicaciones Especializadas" data-fr="Applications Spécialisées"></h3>
-                    <p data-en="Custom solutions for unique project requirements" data-es="Soluciones personalizadas para requisitos de proyectos únicos" data-fr="Solutions personnalisées pour les exigences de projets uniques"></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why FIXORA -->
-    <section class="why-fixora">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 data-en="Why Choose FIXORA" data-es="Por Qué Elegir FIXORA" data-fr="Pourquoi Choisir FIXORA"></h2>
-            </div>
-
-            <div class="why-grid">
-                <div class="why-item">
-                    <div class="why-number">01</div>
-                    <h3 data-en="US-Based Strategic Inventory" data-es="Inventario Estratégico Basado en EE.UU." data-fr="Inventaire Stratégique Basé aux États-Unis"></h3>
-                    <p data-en="Regional warehousing and distribution centers ensure rapid fulfillment and consistent availability" data-es="Los centros de almacenamiento y distribución regional garantizan cumplimiento rápido y disponibilidad consistente" data-fr="Les centres d'entreposage et de distribution régionaux assurent un traitement rapide et une disponibilité constante"></p>
-                </div>
-                <div class="why-item">
-                    <div class="why-number">02</div>
-                    <h3 data-en="Proven Quality Standards" data-es="Estándares de Calidad Probados" data-fr="Normes de Qualité Éprouvées"></h3>
-                    <p data-en="Rigorous testing and quality control ensure consistent product performance" data-es="Las pruebas rigurosas y el control de calidad garantizan un rendimiento consistente del producto" data-fr="Les tests rigoureux et le contrôle de qualité assurent une performance produit constante"></p>
-                </div>
-                <div class="why-item">
-                    <div class="why-number">03</div>
-                    <h3 data-en="Lifetime Warranty Coverage" data-es="Cobertura de Garantía de Por Vida" data-fr="Couverture de Garantie à Vie"></h3>
-                    <p data-en="Comprehensive warranty backed by professional support and after-sales service" data-es="Garantía integral respaldada por soporte profesional y servicio posventa" data-fr="Garantie complète soutenue par un support professionnel et un service après-vente"></p>
-                </div>
-                <div class="why-item">
-                    <div class="why-number">04</div>
-                    <h3 data-en="Channel Protection" data-es="Protección de Canal" data-fr="Protection du Canal"></h3>
-                    <p data-en="Dedicated territory support and exclusive distribution agreements" data-es="Soporte de territorio dedicado y acuerdos de distribución exclusiva" data-fr="Support territorial dédié et accords de distribution exclusifs"></p>
-                </div>
-                <div class="why-item">
-                    <div class="why-number">05</div>
-                    <h3 data-en="Curated SKU Selection" data-es="Selección de SKU Curada" data-fr="Sélection SKU Curée"></h3>
-                    <p data-en="Carefully selected products optimized for market demand and project requirements" data-es="Productos seleccionados cuidadosamente optimizados para la demanda del mercado" data-fr="Produits soigneusement sélectionnés optimisés pour la demande du marché"></p>
-                </div>
-                <div class="why-item">
-                    <div class="why-number">06</div>
-                    <h3 data-en="Expert Professional Support" data-es="Soporte Profesional Experto" data-fr="Support Professionnel Expert"></h3>
-                    <p data-en="Dedicated account managers and technical specialists to support your success" data-es="Gestores de cuenta dedicados y especialistas técnicos para apoyar su éxito" data-fr="Gestionnaires de compte dédiés et spécialistes techniques pour soutenir votre succès"></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 data-en="Product Categories" data-es="Categorías de Productos" data-fr="Catégories de Produits"></h2>
-                <p data-en="Comprehensive hardware solutions from entry to specialty applications" data-es="Soluciones de hardware integral desde entrada a aplicaciones especializadas" data-fr="Solutions matériel complètes des entrées aux applications spécialisées"></p>
-            </div>
-
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-header">🔐</div>
-                    <h3 data-en="Door Locks" data-es="Cerraduras de Puerta" data-fr="Serrures de Porte"></h3>
-                    <ul>
-                        <li data-en="Entry Door Locks" data-es="Cerraduras de Puerta de Entrada" data-fr="Serrures de Porte d'Entrée"></li>
-                        <li data-en="Deadbolts" data-es="Cerrojos" data-fr="Verrous"></li>
-                        <li data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Intelligentes"></li>
-                        <li data-en="Mortise Locks" data-es="Cerraduras de Espiga" data-fr="Serrures à Mortaise"></li>
-                    </ul>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-header">🚪</div>
-                    <h3 data-en="Door Hardware" data-es="Hardware de Puerta" data-fr="Quincaillerie de Porte"></h3>
-                    <ul>
-                        <li data-en="Door Handles & Knobs" data-es="Manijas y Perillas" data-fr="Poignées et Boutons"></li>
-                        <li data-en="Hinges" data-es="Bisagras" data-fr="Charnières"></li>
-                        <li data-en="Closers & Pivots" data-es="Cierres y Pivotes" data-fr="Ferme-portes et Pivots"></li>
-                        <li data-en="Exit Devices" data-es="Dispositivos de Salida" data-fr="Dispositifs de Sortie"></li>
-                    </ul>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-header">🛋️</div>
-                    <h3 data-en="Furniture Hardware" data-es="Hardware de Muebles" data-fr="Quincaillerie de Meubles"></h3>
-                    <ul>
-                        <li data-en="Cabinet Hinges" data-es="Bisagras de Gabinete" data-fr="Charnières d'Armoire"></li>
-                        <li data-en="Drawer Slides" data-es="Deslizadores de Cajón" data-fr="Glissières de Tiroir"></li>
-                        <li data-en="Handles & Pulls" data-es="Manijas y Tirones" data-fr="Poignées et Tirettes"></li>
-                        <li data-en="Drawer Dividers" data-es="Divisores de Cajón" data-fr="Séparateurs de Tiroir"></li>
-                    </ul>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-header">🗄️</div>
-                    <h3 data-en="Cabinet Hardware" data-es="Hardware de Gabinete" data-fr="Quincaillerie d'Armoire"></h3>
-                    <ul>
-                        <li data-en="Specialty Hinges" data-es="Bisagras Especiales" data-fr="Charnières Spéciales"></li>
-                        <li data-en="Shelf Systems" data-es="Sistemas de Estantes" data-fr="Systèmes d'Étagères"></li>
-                        <li data-en="Organizational Systems" data-es="Sistemas de Organización" data-fr="Systèmes d'Organisation"></li>
-                        <li data-en="Access Solutions" data-es="Soluciones de Acceso" data-fr="Solutions d'Accès"></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="cta-resources">
-                <button class="btn btn-outline" data-en="Download Product Catalog" data-es="Descargar Catálogo de Productos" data-fr="Télécharger le Catalogue des Produits"></button>
-                <button class="btn btn-outline" data-en="Request Specifications" data-es="Solicitar Especificaciones" data-fr="Demander les Spécifications"></button>
+                <a href="#contact" class="btn btn-primary" data-en="Get In Touch" data-es="Ponte en Contacto" data-fr="Entrer en Contact"></a>
+                <a href="#projects" class="btn btn-secondary" data-en="View Projects" data-es="Ver Proyectos" data-fr="Voir les Projets"></a>
             </div>
         </div>
     </section>
@@ -202,27 +644,86 @@
     <section id="projects" class="projects">
         <div class="section-container">
             <div class="section-header">
-                <h2 data-en="Inspiration & Projects" data-es="Inspiración y Proyectos" data-fr="Inspiration et Projets"></h2>
-                <p data-en="See FIXORA hardware in real-world applications" data-es="Vea el hardware FIXORA en aplicaciones del mundo real" data-fr="Voir le matériel FIXORA dans les applications du monde réel"></p>
+                <h2 data-en="Real-World Applications" data-es="Aplicaciones en el Mundo Real" data-fr="Applications dans le Monde Réel"></h2>
+                <p data-en="FIXORA hardware in residential, commercial, and renovation projects" data-es="Hardware FIXORA en proyectos residenciales, comerciales y de renovación" data-fr="Matériel FIXORA dans les projets résidentiels, commerciaux et de rénovation"></p>
             </div>
 
             <div class="projects-grid">
-                <div class="project-card" data-category="residential">
-                    <div class="project-image" style="background: linear-gradient(135deg, #3d3d3d, #5a5a5a);"></div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=300&fit=crop" alt="Modern Residential">
                     <h3 data-en="Modern Residential" data-es="Residencial Moderno" data-fr="Résidentiel Moderne"></h3>
-                    <p data-en="Contemporary homes featuring integrated smart hardware" data-es="Casas contemporáneas con hardware inteligente integrado" data-fr="Maisons contemporaines avec matériel intelligent intégré"></p>
+                    <p data-en="Contemporary homes with premium hardware integration" data-es="Casas contemporáneas con integración de hardware premium" data-fr="Maisons contemporaines avec intégration de matériel premium"></p>
                 </div>
 
-                <div class="project-card" data-category="commercial">
-                    <div class="project-image" style="background: linear-gradient(135deg, #4a4a4a, #6b6b6b);"></div>
-                    <h3 data-en="Commercial Office" data-es="Oficina Comercial" data-fr="Bureau Commercial"></h3>
-                    <p data-en="Professional spaces with specification-grade hardware" data-es="Espacios profesionales con hardware de grado especificado" data-fr="Espaces professionnels avec matériel de qualité de spécification"></p>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=300&fit=crop" alt="Commercial Office">
+                    <h3 data-en="Commercial Spaces" data-es="Espacios Comerciales" data-fr="Espaces Commerciaux"></h3>
+                    <p data-en="Professional buildings with specification-grade hardware" data-es="Edificios profesionales con hardware de grado especificado" data-fr="Bâtiments professionnels avec matériel de qualité de spécification"></p>
                 </div>
 
-                <div class="project-card" data-category="luxury">
-                    <div class="project-image" style="background: linear-gradient(135deg, #6b6b6b, #8b8b8b);"></div>
-                    <h3 data-en="Luxury Residential" data-es="Residencial de Lujo" data-fr="Résidentiel de Luxe"></h3>
-                    <p data-en="High-end homes with premium finish options" data-es="Casas de gama alta con opciones de acabado premium" data-fr="Maisons haut de gamme avec options de finition premium"></p>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1616003325385-dc674cdcd25c?w=500&h=300&fit=crop" alt="Renovation Project">
+                    <h3 data-en="Renovations" data-es="Renovaciones" data-fr="Rénovations"></h3>
+                    <p data-en="Quality upgrades for home and business renovations" data-es="Mejoras de calidad para renovaciones de casas y negocios" data-fr="Mises à niveau de qualité pour les rénovations de maisons et d'entreprises"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Section -->
+    <section id="company" class="company">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 data-en="About FIXORA" data-es="Acerca de FIXORA" data-fr="À Propos de FIXORA"></h2>
+                <p data-en="Your trusted hardware distribution partner" data-es="Su socio de distribución de hardware de confianza" data-fr="Votre partenaire de distribution de matériel de confiance"></p>
+            </div>
+
+            <div class="company-content">
+                <div class="company-image">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Professional team collaboration">
+                </div>
+                <div class="company-info">
+                    <h3 data-en="Our Commitment" data-es="Nuestro Compromiso" data-fr="Notre Engagement"></h3>
+                    <p data-en="FIXORA is dedicated to providing North American builders, contractors, and distributors with reliable, high-quality hardware solutions backed by exceptional service and professional support." data-es="FIXORA se dedica a proporcionar a constructores, contratistas y distribuidores de América del Norte soluciones de hardware confiables y de alta calidad respaldadas por servicio excepcional y soporte profesional." data-fr="FIXORA est dédiée à fournir aux constructeurs, entrepreneurs et distributeurs nord-américains des solutions matériel fiables et de haute qualité soutenues par un service exceptionnel et un support professionnel."></p>
+
+                    <h3 style="margin-top: 2rem;" data-en="Core Values" data-es="Valores Fundamentales" data-fr="Valeurs Fondamentales"></h3>
+                    <ul class="values-list">
+                        <li data-en="Reliability: Premium quality you can trust" data-es="Confiabilidad: Calidad premium en la que puede confiar" data-fr="Fiabilité: Qualité premium sur laquelle vous pouvez compter"></li>
+                        <li data-en="Partnership: Long-term success together" data-es="Asociación: Éxito a largo plazo juntos" data-fr="Partenariat: Succès à long terme ensemble"></li>
+                        <li data-en="Innovation: Cutting-edge solutions" data-es="Innovación: Soluciones de vanguardia" data-fr="Innovation: Solutions de pointe"></li>
+                        <li data-en="Support: Expert guidance always" data-es="Soporte: Orientación de expertos siempre" data-fr="Support: Orientation expert toujours"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 data-en="Our Team" data-es="Nuestro Equipo" data-fr="Notre Équipe"></h2>
+                <p data-en="Experienced professionals dedicated to your success" data-es="Profesionales experimentados dedicados a su éxito" data-fr="Professionnels expérimentés dédiés à votre succès"></p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop" alt="Mike - Sales Manager">
+                    <h3>Mike</h3>
+                    <p data-en="Sales Manager" data-es="Gerente de Ventas" data-fr="Gestionnaire des Ventes"></p>
+                    <p class="contact-badge">📧 mike@probuildercorp.com</p>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop" alt="Logistics Team">
+                    <h3 data-en="Distribution Team" data-es="Equipo de Distribución" data-fr="Équipe de Distribution"></h3>
+                    <p data-en="Logistics & Inventory Management" data-es="Gestión de Logística e Inventario" data-fr="Gestion de la Logistique et de l'Inventaire"></p>
+                </div>
+
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop" alt="Technical Support">
+                    <h3 data-en="Technical Team" data-es="Equipo Técnico" data-fr="Équipe Technique"></h3>
+                    <p data-en="Professional Support & Solutions" data-es="Soporte Profesional y Soluciones" data-fr="Support Professionnel et Solutions"></p>
                 </div>
             </div>
         </div>
@@ -233,17 +734,15 @@
         <div class="section-container">
             <div class="section-header">
                 <h2 data-en="Support & Resources" data-es="Soporte y Recursos" data-fr="Support et Ressources"></h2>
-                <p data-en="Comprehensive resources for partners and professionals" data-es="Recursos integrales para socios y profesionales" data-fr="Ressources complètes pour les partenaires et les professionnels"></p>
             </div>
 
             <div class="support-grid">
                 <div class="support-card">
                     <h3>📋 Technical Documentation</h3>
                     <ul>
-                        <li data-en="Product Specification Sheets" data-es="Hojas de Especificación del Producto" data-fr="Fiches de Spécifications des Produits"></li>
+                        <li data-en="Product Specifications" data-es="Especificaciones de Productos" data-fr="Spécifications des Produits"></li>
                         <li data-en="Installation Guides" data-es="Guías de Instalación" data-fr="Guides d'Installation"></li>
                         <li data-en="CAD Drawings" data-es="Dibujos CAD" data-fr="Dessins CAO"></li>
-                        <li data-en="Finish Charts" data-es="Gráficos de Acabado" data-fr="Tableaux de Finition"></li>
                     </ul>
                 </div>
 
@@ -251,19 +750,17 @@
                     <h3>🤝 Sales Support</h3>
                     <ul>
                         <li data-en="Pricing & Quotes" data-es="Precios y Cotizaciones" data-fr="Prix et Devis"></li>
-                        <li data-en="Order Tracking" data-es="Seguimiento de Pedidos" data-fr="Suivi des Commandes"></li>
+                        <li data-en="Order Processing" data-es="Procesamiento de Pedidos" data-fr="Traitement des Commandes"></li>
                         <li data-en="Sample Requests" data-es="Solicitudes de Muestras" data-fr="Demandes d'Échantillons"></li>
-                        <li data-en="Custom Solutions" data-es="Soluciones Personalizadas" data-fr="Solutions Personnalisées"></li>
                     </ul>
                 </div>
 
                 <div class="support-card">
                     <h3>🔧 Technical Support</h3>
                     <ul>
-                        <li data-en="Technical Specifications" data-es="Especificaciones Técnicas" data-fr="Spécifications Techniques"></li>
                         <li data-en="Product Selection" data-es="Selección de Productos" data-fr="Sélection de Produits"></li>
-                        <li data-en="Warranty Information" data-es="Información de Garantía" data-fr="Informations de Garantie"></li>
                         <li data-en="Expert Consultation" data-es="Consulta de Expertos" data-fr="Consultation d'Experts"></li>
+                        <li data-en="Warranty Support" data-es="Soporte de Garantía" data-fr="Support de Garantie"></li>
                     </ul>
                 </div>
             </div>
@@ -275,7 +772,6 @@
         <div class="section-container">
             <div class="section-header">
                 <h2 data-en="Get In Touch" data-es="Ponte en Contacto" data-fr="Entrer en Contact"></h2>
-                <p data-en="Reach out to our team for partnership opportunities and support" data-es="Póngase en contacto con nuestro equipo para oportunidades de asociación y apoyo" data-fr="Contactez notre équipe pour les opportunités de partenariat et le support"></p>
             </div>
 
             <div class="contact-grid">
@@ -283,7 +779,7 @@
                     <h3 data-en="Contact Information" data-es="Información de Contacto" data-fr="Informations de Contact"></h3>
 
                     <div class="contact-item">
-                        <strong data-en="Sales Department" data-es="Departamento de Ventas" data-fr="Département des Ventes"></strong>
+                        <strong data-en="Sales Manager" data-es="Gerente de Ventas" data-fr="Gestionnaire des Ventes"></strong>
                         <p>👤 Mike</p>
                         <p>📧 mike@probuildercorp.com</p>
                     </div>
@@ -292,24 +788,23 @@
                         <strong data-en="Office Address" data-es="Dirección de Oficina" data-fr="Adresse du Bureau"></strong>
                         <p>FIXORA Distribution Center</p>
                         <p>1822 East Francis Street</p>
-                        <p>Ontario, CA, USA</p>
+                        <p>Ontario, CA 91761</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong data-en="Service Hours" data-es="Horario de Atención" data-fr="Heures de Service"></strong>
+                        <p data-en="Monday - Friday: 8am - 5pm" data-es="Lunes - Viernes: 8am - 5pm" data-fr="Lundi - Vendredi: 8h - 17h"></p>
+                        <p data-en="Pacific Time" data-es="Hora del Pacífico" data-fr="Heure du Pacifique"></p>
                     </div>
                 </div>
 
-                <form class="contact-form" id="contactForm">
-                    <input type="text" placeholder="Company Name" required>
-                    <input type="email" placeholder="Email Address" required>
-                    <input type="tel" placeholder="Phone Number" required>
-                    <select required>
-                        <option data-en="Select Your Role" data-es="Seleccione su Rol" data-fr="Sélectionnez Votre Rôle"></option>
-                        <option data-en="Distributor" data-es="Distribuidor" data-fr="Distributeur"></option>
-                        <option data-en="Contractor/Builder" data-es="Contratista/Constructor" data-fr="Entrepreneur/Constructeur"></option>
-                        <option data-en="Architect/Designer" data-es="Arquitecto/Diseñador" data-fr="Architecte/Designer"></option>
-                        <option data-en="Other" data-es="Otro" data-fr="Autre"></option>
-                    </select>
-                    <textarea placeholder="Message" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary" data-en="Send Message" data-es="Enviar Mensaje" data-fr="Envoyer un Message"></button>
-                </form>
+                <div>
+                    <h3 style="margin-bottom: 2rem;" data-en="Quick Message" data-es="Mensaje Rápido" data-fr="Message Rapide"></h3>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem;" data-en="Send us a message and we'll get back to you shortly" data-es="Envíanos un mensaje y nos pondremos en contacto contigo pronto" data-fr="Envoyez-nous un message et nous vous recontacterons bientôt"></p>
+                    <p style="font-size: 0.95rem; color: var(--primary-orange); font-weight: 600;">
+                        📧 mike@probuildercorp.com
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -321,29 +816,20 @@
                 <div class="footer-section">
                     <h4>FIXORA</h4>
                     <p data-en="Engineered for Reliability" data-es="Diseñado para Confiabilidad" data-fr="Conçu pour la Fiabilité"></p>
-                    <p style="font-size: 0.85rem; margin-top: 1rem;" data-en="Premium hardware solutions for North American builders, contractors, designers, and distributors." data-es="Soluciones de hardware premium para constructores, contratistas, diseñadores y distribuidores de América del Norte." data-fr="Solutions matériel premium pour les constructeurs, entrepreneurs, designers et distributeurs nord-américains."></p>
+                    <p style="font-size: 0.85rem; margin-top: 1rem; color: rgba(255,255,255,0.7);" data-en="Premium hardware distribution partner for North America" data-es="Socio de distribución de hardware premium para América del Norte" data-fr="Partenaire de distribution de matériel premium pour l'Amérique du Nord"></p>
                 </div>
                 <div class="footer-section">
-                    <h4 data-en="Products" data-es="Productos" data-fr="Produits"></h4>
+                    <h4 data-en="Quick Links" data-es="Enlaces Rápidos" data-fr="Liens Rapides"></h4>
                     <ul>
-                        <li><a href="#products" data-en="Door Locks" data-es="Cerraduras de Puerta" data-fr="Serrures de Porte"></a></li>
-                        <li><a href="#products" data-en="Door Hardware" data-es="Hardware de Puerta" data-fr="Quincaillerie de Porte"></a></li>
-                        <li><a href="#products" data-en="Cabinet Hardware" data-es="Hardware de Gabinete" data-fr="Quincaillerie d'Armoire"></a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4 data-en="Company" data-es="Empresa" data-fr="Société"></h4>
-                    <ul>
-                        <li><a href="#solutions" data-en="Solutions" data-es="Soluciones" data-fr="Solutions"></a></li>
                         <li><a href="#projects" data-en="Projects" data-es="Proyectos" data-fr="Projets"></a></li>
-                        <li><a href="#support" data-en="Support" data-es="Soporte" data-fr="Support"></a></li>
+                        <li><a href="#company" data-en="About" data-es="Acerca de" data-fr="À Propos"></a></li>
+                        <li><a href="#team" data-en="Team" data-es="Equipo" data-fr="Équipe"></a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4 data-en="Contact" data-es="Contacto" data-fr="Contact"></h4>
-                    <p>Email: info@fixora.com</p>
-                    <p>Phone: 1-800-FIXORA-1</p>
-                    <p>Los Angeles, CA USA</p>
+                    <p>📧 mike@probuildercorp.com</p>
+                    <p>📍 Ontario, CA</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -352,6 +838,48 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+let currentLanguage = localStorage.getItem('fixora-language') || 'en';
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('language').value = currentLanguage;
+    applyLanguage(currentLanguage);
+
+    const navMenu = document.getElementById('navMenu');
+    document.querySelectorAll('#navMenu a').forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('active');
+        });
+    });
+});
+
+function changeLanguage(lang) {
+    currentLanguage = lang;
+    localStorage.setItem('fixora-language', lang);
+    applyLanguage(lang);
+}
+
+function applyLanguage(lang) {
+    const elements = document.querySelectorAll('[data-en]');
+    elements.forEach(element => {
+        const text = element.getAttribute(`data-${lang}`);
+        if (text) element.textContent = text;
+    });
+
+    if (lang === 'es') document.title = 'FIXORA - Diseñado para Confiabilidad';
+    else if (lang === 'fr') document.title = 'FIXORA - Conçu pour la Fiabilité';
+    else document.title = 'FIXORA - Engineered for Reliability';
+
+    document.getElementById('language').value = lang;
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+    </script>
 </body>
 </html>
