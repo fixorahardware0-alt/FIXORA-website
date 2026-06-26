@@ -3,737 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIXORA - Engineered for Reliability | Premium Hardware Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Marcellus&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-:root {
-    --primary-orange: #FF6B35;
-    --dark-bg: #0f0f0f;
-    --dark-gray: #1a1a1a;
-    --medium-gray: #2a2a2a;
-    --light-gray: #f5f5f5;
-    --border-color: #e0ddd8;
-    --text-dark: #1a1a1a;
-    --text-light: #666666;
-    --white: #ffffff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-dark);
-    line-height: 1.6;
-    background-color: #ffffff;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: all 0.3s ease;
-}
-
-button {
-    font-family: 'Inter', sans-serif;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Navigation */
-.navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: var(--white);
-    border-bottom: 1px solid var(--border-color);
-    backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.95);
-}
-
-.nav-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 1.2rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-    cursor: pointer;
-}
-
-.logo-img {
-    height: 30px;
-    width: auto;
-    display: block;
-}
-
-.logo-fixora {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -1px;
-    background: linear-gradient(90deg, var(--text-dark) 0%, var(--text-dark) 70%, var(--primary-orange) 70%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.logo-divider {
-    color: var(--primary-orange);
-    font-weight: 300;
-    font-size: 1.2rem;
-}
-
-.logo-tagline {
-    font-size: 0.7rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--text-light);
-    font-weight: 500;
-}
-
-.nav-menu {
-    display: flex;
-    list-style: none;
-    gap: 2.2rem;
-    align-items: center;
-}
-
-.nav-menu a {
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: var(--text-dark);
-    position: relative;
-}
-
-.nav-menu a::after {
-    content: '';
-    position: absolute;
-    bottom: -6px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-orange);
-    transition: width 0.3s ease;
-}
-
-.nav-menu a:hover::after {
-    width: 100%;
-}
-
-.language-selector {
-    margin-left: 1.5rem;
-    padding-left: 1.5rem;
-    border-left: 1px solid var(--border-color);
-}
-
-.language-selector select {
-    font-family: 'Inter', sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    color: var(--text-dark);
-    padding: 0.25rem;
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--text-dark);
-}
-
-/* Hero Section */
-.hero {
-    position: relative;
-    height: 650px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.hero-image-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('https://images.unsplash.com/photo-1600585152915-d208bec867a1?w=1600&h=900&fit=crop') center/cover;
-    z-index: 1;
-}
-
-.hero-image-bg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to top, rgba(58, 42, 28, 0.78) 0%, rgba(74, 56, 38, 0.4) 45%, rgba(58, 42, 28, 0.5) 100%);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    color: white;
-    max-width: 820px;
-    padding: 0 2rem;
-}
-
-.hero-label {
-    display: block;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--primary-orange);
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.hero h1 {
-    font-family: 'Marcellus', serif;
-    font-size: 4.2rem;
-    font-weight: 400;
-    line-height: 1.12;
-    letter-spacing: 1px;
-    margin-bottom: 1.5rem;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
-}
-
-.hero p {
-    font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
-    margin-bottom: 2.5rem;
-    line-height: 1.8;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-/* Buttons */
-.btn {
-    padding: 1rem 2rem;
-    border-radius: 2px;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    display: inline-block;
-    transition: all 0.3s ease;
-}
-
-.btn-primary {
-    background-color: var(--primary-orange);
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #ff5722;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(255, 107, 53, 0.3);
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.btn-secondary:hover {
-    background-color: white;
-    color: var(--primary-orange);
-}
-
-/* Sections */
-.section-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
-}
-
-section {
-    padding: 6rem 0;
-}
-
-.section-header {
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.section-header h2 {
-    font-family: 'Marcellus', serif;
-    font-size: 2.9rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin-bottom: 1rem;
-    color: var(--text-dark);
-}
-
-.section-header p {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    max-width: 720px;
-    margin: 0 auto;
-}
-
-/* Generic feature cards (Who We Serve / Why FIXORA / Products) */
-.feature-grid {
-    display: grid;
-    gap: 2rem;
-}
-
-.serve-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-.why-grid { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
-.products-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
-
-.feature-card {
-    background: white;
-    border-radius: 4px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
-    overflow: hidden;
-    text-align: left;
-}
-
-.feature-card:hover {
-    box-shadow: 0 16px 38px rgba(0, 0, 0, 0.12);
-    transform: translateY(-6px);
-}
-
-.feature-media {
-    height: 230px;
-    background: #ece9e4;
-    overflow: hidden;
-}
-
-.feature-media img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
-
-.feature-card:hover .feature-media img {
-    transform: scale(1.05);
-}
-
-.feature-body {
-    padding: 1.8rem;
-}
-
-.feature-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.7rem;
-    font-weight: 600;
-}
-
-.feature-card p {
-    color: var(--text-light);
-    line-height: 1.7;
-    font-size: 0.97rem;
-}
-
-/* Who We Serve */
-.serve { background-color: white; }
-
-/* Why FIXORA */
-.why { background-color: #fafafa; }
-
-/* Product Categories */
-.products { background-color: white; }
-
-.product-group { margin-bottom: 4rem; }
-.product-group:last-child { margin-bottom: 0; }
-
-.product-group-head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-bottom: 1.8rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.product-group-title {
-    font-family: 'Marcellus', serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    color: var(--text-dark);
-}
-
-.product-status {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    padding: 0.4rem 0.9rem;
-    border-radius: 2px;
-    white-space: nowrap;
-}
-
-.product-status.available {
-    background-color: var(--primary-orange);
-    color: #fff;
-}
-
-.product-status:not(.available) {
-    color: var(--text-light);
-    border: 1px solid var(--border-color);
-}
-
-.product-group.is-upcoming .products-grid { opacity: 0.6; }
-
-.card-link { display: block; color: inherit; }
-.card-cta {
-    display: inline-block;
-    margin-top: 1rem;
-    font-size: 0.78rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--primary-orange);
-}
-
-.subcat { margin-bottom: 3rem; }
-.subcat:last-child { margin-bottom: 0; }
-
-.subcat-head {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-
-.subcat-title {
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: var(--text-dark);
-    margin-bottom: 1.5rem;
-}
-
-.subcat-head .subcat-title { margin-bottom: 0; }
-
-.subcat.is-upcoming .products-grid { opacity: 0.55; }
-
-.product-model {
-    display: block;
-    font-size: 0.72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--primary-orange);
-    margin-bottom: 0.4rem;
-}
-
-/* Applications / Projects */
-.projects { background-color: #fafafa; }
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
-    overflow: hidden;
-    border-radius: 4px;
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.project-card:hover {
-    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.14);
-    transform: translateY(-6px);
-}
-
-.project-image {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-image {
-    transform: scale(1.05);
-}
-
-.project-card h3 {
-    font-size: 1.2rem;
-    padding: 1.5rem 1.5rem 0.5rem;
-    font-weight: 600;
-}
-
-.project-card p {
-    padding: 0 1.5rem 1.5rem;
-    color: var(--text-light);
-    line-height: 1.7;
-}
-
-/* Supply & Support */
-.support { background-color: white; }
-
-.support-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.support-card {
-    background: white;
-    padding: 2.5rem 2rem;
-    border-radius: 4px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-}
-
-.support-card:hover {
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    transform: translateY(-6px);
-}
-
-.support-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-}
-
-.support-card ul {
-    list-style: none;
-}
-
-.support-card li {
-    padding: 0.6rem 0;
-    color: var(--text-light);
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.support-card li:before {
-    content: '▸';
-    position: absolute;
-    left: 0;
-    color: var(--primary-orange);
-}
-
-/* Partner With Us */
-.partner { background-color: #fafafa; }
-
-.partner-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-}
-
-.partner-info h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.partner-info p {
-    font-size: 1rem;
-    color: var(--text-light);
-    line-height: 1.8;
-    margin-bottom: 1.2rem;
-}
-
-.values-list {
-    list-style: none;
-    margin-top: 1rem;
-}
-
-.values-list li {
-    padding: 0.7rem 0;
-    padding-left: 2rem;
-    position: relative;
-    color: var(--text-light);
-}
-
-.values-list li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--primary-orange);
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
-.contact-card {
-    background: white;
-    padding: 2.5rem;
-    border-radius: 4px;
-    border: 1px solid var(--border-color);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-}
-
-.contact-card h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
-    font-weight: 600;
-}
-
-.contact-item {
-    margin-bottom: 1.8rem;
-    padding-bottom: 1.8rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-.contact-item:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.contact-item strong {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-size: 1.05rem;
-    color: var(--primary-orange);
-}
-
-.contact-item p {
-    color: var(--text-light);
-    margin-bottom: 0.25rem;
-}
-
-/* Footer */
-.footer {
-    background-color: var(--dark-gray);
-    color: rgba(255, 255, 255, 0.9);
-    padding: 3rem 0 1rem;
-}
-
-.footer-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 3rem;
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-section h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    color: var(--primary-orange);
-    font-weight: 600;
-}
-
-.footer-logo {
-    height: 26px;
-    width: auto;
-    display: block;
-    margin-bottom: 1.2rem;
-}
-
-.footer-section p {
-    color: rgba(255, 255, 255, 0.8);
-    margin-bottom: 0.5rem;
-    line-height: 1.6;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin-bottom: 0.6rem;
-}
-
-.footer-section a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: color 0.3s ease;
-}
-
-.footer-section a:hover {
-    color: var(--primary-orange);
-}
-
-.footer-bottom {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.9rem;
-    padding: 1rem 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .nav-menu { gap: 1rem; }
-    .hero h1 { font-size: 2.2rem; }
-    .hero-buttons { flex-direction: column; }
-    .section-header h2 { font-size: 2rem; }
-    .partner-grid { grid-template-columns: 1fr; }
-}
-
-@media (max-width: 480px) {
-    .hero { height: 380px; }
-    .hero h1 { font-size: 1.5rem; }
-    section { padding: 2.5rem 0; }
-    .section-header h2 { font-size: 1.4rem; }
-}
-    </style>
+    <title data-en="FIXORA | Professional Hardware Solutions for North American Distribution" data-es="FIXORA | Soluciones Profesionales de Herrajes para la Distribución en América del Norte" data-fr="FIXORA | Solutions de Quincaillerie Professionnelle pour la Distribution en Amérique du Nord">FIXORA | Professional Hardware Solutions for North American Distribution</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Header -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <img class="logo-img" src="images/fixora-logo.png" alt="FIXORA" onerror="this.remove(); document.getElementById('logoTextLight').style.display='inline-block';">
-                <span class="logo-fixora" id="logoTextLight" style="display:none;">FIXORA</span>
-                <span class="logo-divider">|</span>
-                <span class="logo-tagline" data-en="Engineered for Reliability" data-es="Diseñado para Confiabilidad" data-fr="Conçu pour la Fiabilité"></span>
-            </div>
+            <a href="index.html" class="logo"><img class="logo-img" src="images/fixora-logo.png" alt="FIXORA"></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#serve" data-en="Who We Serve" data-es="A Quién Servimos" data-fr="Qui Nous Servons"></a></li>
-                <li><a href="#why" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></a></li>
-                <li><a href="#products" data-en="Products" data-es="Productos" data-fr="Produits"></a></li>
-                <li><a href="#projects" data-en="Projects" data-es="Proyectos" data-fr="Projets"></a></li>
-                <li><a href="#support" data-en="Support" data-es="Soporte" data-fr="Support"></a></li>
-                <li><a href="#partner" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
+                <li><a href="index.html" data-en="Home" data-es="Inicio" data-fr="Accueil"></a></li>
+                <li><a href="about.html" data-en="About" data-es="Acerca de" data-fr="À Propos"></a></li>
+                <li><a href="why.html" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></a></li>
+                <li class="nav-item has-mega">
+                    <a href="products.html" data-en="Products" data-es="Productos" data-fr="Produits"></a>
+                    <div class="mega-menu">
+                        <div class="mega-inner">
+                            <div class="mega-col">
+                                <a class="mega-thumb" href="products.html#door-hardware"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=640&h=440&fit=crop" alt="Door Hardware" onerror="this.style.display='none'"></a>
+                                <a class="mega-cat" href="products.html#door-hardware">
+                                    <span data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></span>
+                                    <span class="status available" data-en="Available" data-es="Disponible" data-fr="Disponible"></span>
+                                </a>
+                                <ul class="mega-list">
+                                    <li><a href="products/smart-locks.html" data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></a></li>
+                                    <li><a href="products.html#door-hardware" data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></a></li>
+                                    <li><a href="products.html#door-hardware" data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <a class="mega-thumb" href="products.html#furniture-hardware"><img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop" alt="Furniture Hardware" onerror="this.style.visibility='hidden'"></a>
+                                <a class="mega-cat" href="products.html#furniture-hardware">
+                                    <span data-en="Furniture Hardware" data-es="Herrajes para Muebles" data-fr="Quincaillerie de Meuble"></span>
+                                    <span class="status soon" data-en="Coming Soon" data-es="Próximamente" data-fr="Bientôt"></span>
+                                </a>
+                                <ul class="mega-list">
+                                    <li><a href="products.html#furniture-hardware" data-en="Pulls &amp; Handles" data-es="Tiradores y Manijas" data-fr="Poignées et Tirants"></a></li>
+                                    <li><a href="products.html#furniture-hardware" data-en="Drawer Slides" data-es="Correderas de Cajón" data-fr="Coulisses de Tiroir"></a></li>
+                                    <li><a href="products.html#furniture-hardware" data-en="Hinges" data-es="Bisagras" data-fr="Charnières"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
+                <li><a href="partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
+                <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
                 <li class="language-selector">
                     <select id="language" onchange="changeLanguage(this.value)">
                         <option value="en">EN</option>
@@ -745,153 +62,130 @@ section {
         </div>
     </nav>
 
-    <!-- 1. Hero / Main Banner -->
+    <!-- Hero -->
     <section class="hero">
         <div class="hero-image-bg"></div>
         <div class="hero-content">
-            <span class="hero-label" data-en="PREMIUM HARDWARE FOR NORTH AMERICA" data-es="HARDWARE PREMIUM PARA AMÉRICA DEL NORTE" data-fr="MATÉRIEL PREMIUM POUR L'AMÉRIQUE DU NORD"></span>
-            <h1 data-en="Engineered for Reliability" data-es="Diseñado para Confiabilidad" data-fr="Conçu pour la Fiabilité"></h1>
-            <p data-en="A trusted hardware distribution partner for residential, commercial, and renovation projects — built to deliver lasting value to every channel partner." data-es="Un socio de distribución de hardware confiable para proyectos residenciales, comerciales y de renovación — diseñado para ofrecer valor duradero a cada socio de canal." data-fr="Un partenaire de distribution de matériel de confiance pour les projets résidentiels, commerciaux et de rénovation — conçu pour offrir une valeur durable à chaque partenaire de canal."></p>
+            <span class="eyebrow" data-en="BACKED BY GLOBAL MANUFACTURING EXPERTISE" data-es="RESPALDADO POR EXPERIENCIA DE FABRICACIÓN GLOBAL" data-fr="SOUTENU PAR UNE EXPERTISE DE FABRICATION MONDIALE"></span>
+            <h1 data-en="Professional Hardware Solutions for Trade" data-es="Soluciones Profesionales de Herrajes para el Sector" data-fr="Solutions de Quincaillerie Professionnelle pour les Professionnels"></h1>
+            <p data-en="North American distribution — built for distributors, builders, and trade professionals with reliable supply, consistent quality, and long-term partnership." data-es="La distribución en América del Norte — diseñado para distribuidores, constructores y profesionales del sector, con suministro confiable, calidad consistente y asociación a largo plazo." data-fr="La distribution en Amérique du Nord — conçu pour les distributeurs, les constructeurs et les professionnels du métier, avec un approvisionnement fiable, une qualité constante et un partenariat à long terme."></p>
             <div class="hero-buttons">
-                <a href="#partner" class="btn btn-primary" data-en="Partner With Us" data-es="Asóciese con Nosotros" data-fr="Devenir Partenaire"></a>
-                <a href="#products" class="btn btn-secondary" data-en="View Products" data-es="Ver Productos" data-fr="Voir les Produits"></a>
+                <a href="partner.html" class="btn btn-primary" data-en="Partner With Us" data-es="Asóciese con Nosotros" data-fr="Devenir Partenaire"></a>
+                <a href="products.html" class="btn btn-secondary" data-en="View Products" data-es="Ver Productos" data-fr="Voir les Produits"></a>
             </div>
         </div>
     </section>
 
-    <!-- 2. Who We Serve -->
-    <section id="serve" class="serve">
+    <!-- About (overview) -->
+    <section class="about">
         <div class="section-container">
-            <div class="section-header">
-                <h2 data-en="Who We Serve" data-es="A Quién Servimos" data-fr="Qui Nous Servons"></h2>
-                <p data-en="A dependable hardware supply partner across the building industry" data-es="Un socio confiable de suministro de hardware en toda la industria de la construcción" data-fr="Un partenaire fiable d'approvisionnement en matériel dans toute l'industrie du bâtiment"></p>
-            </div>
-
-            <div class="feature-grid serve-grid">
-                <div class="feature-card">
-                    <div class="feature-media">
-                        <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop" alt="Distributors" loading="lazy" onerror="this.style.display='none'">
-                    </div>
-                    <div class="feature-body">
-                        <h3 data-en="Distributors" data-es="Distribuidores" data-fr="Distributeurs"></h3>
-                        <p data-en="Reliable supply, competitive pricing, and consistent stock to keep your shelves and customers moving." data-es="Suministro confiable, precios competitivos y stock constante para mantener sus estantes y clientes en movimiento." data-fr="Approvisionnement fiable, prix compétitifs et stock constant pour faire avancer vos rayons et vos clients."></p>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-media">
-                        <img src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?w=600&h=400&fit=crop" alt="Builders and Contractors" loading="lazy" onerror="this.style.display='none'">
-                    </div>
-                    <div class="feature-body">
-                        <h3 data-en="Builders / Contractors" data-es="Constructores / Contratistas" data-fr="Constructeurs / Entrepreneurs"></h3>
-                        <p data-en="Job-ready hardware that meets spec, delivered on schedule to keep every project on track." data-es="Hardware listo para obra que cumple con las especificaciones, entregado a tiempo para mantener cada proyecto en marcha." data-fr="Du matériel prêt à l'emploi conforme aux spécifications, livré dans les délais pour garder chaque projet sur la bonne voie."></p>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-media">
-                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=400&fit=crop" alt="Designers and Architects" loading="lazy" onerror="this.style.display='none'">
-                    </div>
-                    <div class="feature-body">
-                        <h3 data-en="Designers / Architects" data-es="Diseñadores / Arquitectos" data-fr="Designers / Architectes"></h3>
-                        <p data-en="Specification-grade hardware and finishes that bring your design vision to life with confidence." data-es="Hardware y acabados de grado de especificación que dan vida a su visión de diseño con confianza." data-fr="Du matériel et des finitions de qualité spécifiée qui donnent vie à votre vision de conception en toute confiance."></p>
-                    </div>
+            <div class="about-inner">
+                <span class="eyebrow" data-en="About FIXORA" data-es="Acerca de FIXORA" data-fr="À Propos de FIXORA"></span>
+                <h2 data-en="Built for the Trade" data-es="Hecho para el Sector" data-fr="Conçu pour les Professionnels"></h2>
+                <p data-en="FIXORA is a North America-focused hardware brand backed by ProBuilder US and global manufacturing expertise — helping distributors grow with dependable products, reliable supply, and professional support." data-es="FIXORA es una marca de herrajes enfocada en América del Norte, respaldada por ProBuilder US y experiencia de fabricación global — ayudando a los distribuidores a crecer con productos confiables, suministro fiable y soporte profesional." data-fr="FIXORA est une marque de quincaillerie axée sur l'Amérique du Nord, soutenue par ProBuilder US et une expertise de fabrication mondiale — aidant les distributeurs à se développer avec des produits fiables, un approvisionnement fiable et un support professionnel."></p>
+                <p class="backed" data-en="Backed by ProBuilder US" data-es="Respaldado por ProBuilder US" data-fr="Soutenu par ProBuilder US"></p>
+                <div class="section-cta" style="margin-top:2rem;">
+                    <a href="about.html" class="learn-more" data-en="Learn More →" data-es="Saber Más →" data-fr="En Savoir Plus →"></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3. Why FIXORA -->
-    <section id="why" class="why">
+    <!-- Why FIXORA (overview) -->
+    <section class="why" style="background:#fff;">
         <div class="section-container">
             <div class="section-header">
-                <h2 data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></h2>
-                <p data-en="The core strengths that make us a partner you can build on" data-es="Las fortalezas fundamentales que nos hacen un socio sobre el que puede construir" data-fr="Les atouts fondamentaux qui font de nous un partenaire sur lequel bâtir"></p>
+                <span class="eyebrow" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></span>
+                <h2 data-en="Why Partner With FIXORA" data-es="Por Qué Asociarse con FIXORA" data-fr="Pourquoi S'associer à FIXORA"></h2>
+                <p data-en="Real channel value that helps your business grow" data-es="Valor de canal real que ayuda a su negocio a crecer" data-fr="Une valeur de canal réelle qui aide votre entreprise à se développer"></p>
             </div>
-
-            <div class="feature-grid why-grid">
-                <div class="feature-card">
-                    <div class="feature-media">
-                        <img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop" alt="Reliable Supply" loading="lazy" onerror="this.style.display='none'">
-                    </div>
-                    <div class="feature-body">
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <div class="reason-media"><img src="https://images.unsplash.com/photo-1553413077-190dd305871c?w=600&h=400&fit=crop" alt="Reliable Supply" loading="lazy" onerror="this.style.display='none'"></div>
+                    <div class="reason-body">
+                        <span class="num">01</span>
                         <h3 data-en="Reliable Supply" data-es="Suministro Confiable" data-fr="Approvisionnement Fiable"></h3>
-                        <p data-en="Deep inventory and dependable lead times so you never miss a deadline." data-es="Inventario profundo y plazos de entrega confiables para que nunca pierda una fecha límite." data-fr="Un stock important et des délais fiables pour ne jamais manquer une échéance."></p>
+                        <p data-en="Consistent inventory and dependable delivery to keep your business moving." data-es="Inventario constante y entrega confiable para mantener su negocio en marcha." data-fr="Un inventaire constant et une livraison fiable pour faire avancer votre entreprise."></p>
                     </div>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-media">
-                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" alt="Consistent Quality" loading="lazy" onerror="this.style.display='none'">
-                    </div>
-                    <div class="feature-body">
+                <div class="reason-card">
+                    <div class="reason-media"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop" alt="Consistent Quality" loading="lazy" onerror="this.style.display='none'"></div>
+                    <div class="reason-body">
+                        <span class="num">02</span>
                         <h3 data-en="Consistent Quality" data-es="Calidad Consistente" data-fr="Qualité Constante"></h3>
-                        <p data-en="Rigorous standards across every batch deliver hardware you can trust." data-es="Estándares rigurosos en cada lote ofrecen hardware en el que puede confiar." data-fr="Des normes rigoureuses sur chaque lot offrent un matériel digne de confiance."></p>
+                        <p data-en="Strict quality standards ensure reliable performance across every product batch." data-es="Estándares de calidad estrictos garantizan un rendimiento confiable en cada lote de productos." data-fr="Des normes de qualité strictes garantissent une performance fiable sur chaque lot de produits."></p>
                     </div>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-media">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="Competitive Value" loading="lazy" onerror="this.style.display='none'">
-                    </div>
-                    <div class="feature-body">
+                <div class="reason-card">
+                    <div class="reason-media"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop" alt="Competitive Value" loading="lazy" onerror="this.style.display='none'"></div>
+                    <div class="reason-body">
+                        <span class="num">03</span>
                         <h3 data-en="Competitive Value" data-es="Valor Competitivo" data-fr="Valeur Compétitive"></h3>
-                        <p data-en="Strong margins and fair pricing that strengthen your bottom line." data-es="Márgenes sólidos y precios justos que fortalecen sus resultados." data-fr="Des marges solides et des prix justes qui renforcent vos résultats."></p>
+                        <p data-en="Delivering the right balance of quality, pricing, and long-term value." data-es="Ofreciendo el equilibrio adecuado entre calidad, precio y valor a largo plazo." data-fr="Offrir le juste équilibre entre qualité, prix et valeur à long terme."></p>
                     </div>
                 </div>
-
-                <div class="feature-card">
-                    <div class="feature-media">
-                        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop" alt="Professional Support" loading="lazy" onerror="this.style.display='none'">
-                    </div>
-                    <div class="feature-body">
+                <div class="reason-card">
+                    <div class="reason-media"><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=600&h=400&fit=crop" alt="Professional Support" loading="lazy" onerror="this.style.display='none'"></div>
+                    <div class="reason-body">
+                        <span class="num">04</span>
                         <h3 data-en="Professional Support" data-es="Soporte Profesional" data-fr="Support Professionnel"></h3>
-                        <p data-en="Expert guidance and responsive service at every step of the partnership." data-es="Orientación experta y servicio receptivo en cada paso de la asociación." data-fr="Des conseils d'experts et un service réactif à chaque étape du partenariat."></p>
+                        <p data-en="Responsive sales, technical assistance, and after-sales service when you need it." data-es="Ventas receptivas, asistencia técnica y servicio posventa cuando lo necesite." data-fr="Des ventes réactives, une assistance technique et un service après-vente quand vous en avez besoin."></p>
                     </div>
                 </div>
+                <div class="reason-card">
+                    <div class="reason-media"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&h=400&fit=crop" alt="Built for Distribution" loading="lazy" onerror="this.style.display='none'"></div>
+                    <div class="reason-body">
+                        <span class="num">05</span>
+                        <h3 data-en="Built for Distribution" data-es="Hecho para la Distribución" data-fr="Conçu pour la Distribution"></h3>
+                        <p data-en="Product lines, packaging, and logistics designed specifically for distributors and the trade." data-es="Líneas de productos, embalaje y logística diseñados específicamente para distribuidores y el sector." data-fr="Des gammes de produits, un emballage et une logistique conçus spécifiquement pour les distributeurs et les professionnels."></p>
+                    </div>
+                </div>
+                <div class="reason-card">
+                    <div class="reason-media"><img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600&h=400&fit=crop" alt="Long-Term Partnership" loading="lazy" onerror="this.style.display='none'"></div>
+                    <div class="reason-body">
+                        <span class="num">06</span>
+                        <h3 data-en="Long-Term Partnership" data-es="Asociación a Largo Plazo" data-fr="Partenariat à Long Terme"></h3>
+                        <p data-en="We focus on building lasting partnerships through trust, stability, and shared growth." data-es="Nos enfocamos en construir asociaciones duraderas a través de la confianza, la estabilidad y el crecimiento compartido." data-fr="Nous nous concentrons sur des partenariats durables fondés sur la confiance, la stabilité et la croissance partagée."></p>
+                    </div>
+                </div>
+            </div>
+            <div class="section-cta">
+                <a href="why.html" class="learn-more" data-en="Learn More →" data-es="Saber Más →" data-fr="En Savoir Plus →"></a>
             </div>
         </div>
     </section>
 
-    <!-- 4. Product Categories -->
-    <section id="products" class="products">
+    <!-- Product Categories (overview) -->
+    <section class="products" style="background:var(--warm-bg);">
         <div class="section-container">
             <div class="section-header">
+                <span class="eyebrow" data-en="Products" data-es="Productos" data-fr="Produits"></span>
                 <h2 data-en="Product Categories" data-es="Categorías de Productos" data-fr="Catégories de Produits"></h2>
-                <p data-en="Focused on door hardware today, with furniture hardware on the way" data-es="Enfocados hoy en herrajes para puertas, con herrajes para muebles en camino" data-fr="Axés aujourd'hui sur la quincaillerie de porte, avec la quincaillerie de meuble à venir"></p>
+                <p data-en="Focused product lines that are easy to stock, easy to explain, and easy to sell." data-es="Líneas de productos enfocadas, fáciles de almacenar, explicar y vender." data-fr="Des gammes ciblées, faciles à stocker, à expliquer et à vendre."></p>
             </div>
-
             <div class="product-group">
                 <div class="product-group-head">
                     <h3 class="product-group-title" data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></h3>
                     <span class="product-status available" data-en="Available Now" data-es="Disponible Ahora" data-fr="Disponible Maintenant"></span>
                 </div>
                 <div class="feature-grid products-grid">
-                    <a class="feature-card card-link" href="products/smart-locks.html">
-                        <div class="feature-media">
-                            <img src="images/products/smart-lock-9901.jpg" alt="Smart Locks" loading="lazy">
-                        </div>
+                    <a class="feature-card" href="products/smart-locks.html">
+                        <div class="feature-media"><img src="images/products/smart-lock-9901.jpg" alt="Smart Locks" loading="lazy"></div>
                         <div class="feature-body">
                             <h3 data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></h3>
                             <p data-en="Keypad, fingerprint, and face-recognition locks for modern access control." data-es="Cerraduras con teclado, huella digital y reconocimiento facial para un control de acceso moderno." data-fr="Serrures à clavier, empreinte digitale et reconnaissance faciale pour un contrôle d'accès moderne."></p>
                             <span class="card-cta" data-en="View Products →" data-es="Ver Productos →" data-fr="Voir les Produits →"></span>
                         </div>
                     </a>
-
                     <div class="feature-card">
-                        <div class="feature-media">
-                            <img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&h=400&fit=crop" alt="Mechanical Locks" loading="lazy" onerror="this.style.display='none'">
-                        </div>
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&h=400&fit=crop" alt="Mechanical Locks" loading="lazy" onerror="this.style.display='none'"></div>
                         <div class="feature-body">
                             <h3 data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></h3>
                             <p data-en="Deadbolts, locksets, and entry hardware built for lasting security." data-es="Cerrojos, juegos de cerraduras y herrajes de entrada para una seguridad duradera." data-fr="Pênes dormants, serrures et quincaillerie d'entrée pour une sécurité durable."></p>
                         </div>
                     </div>
-
                     <div class="feature-card">
-                        <div class="feature-media">
-                            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop" alt="Sliding Door Hardware" loading="lazy" onerror="this.style.display='none'">
-                        </div>
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop" alt="Sliding Door Hardware" loading="lazy" onerror="this.style.display='none'"></div>
                         <div class="feature-body">
                             <h3 data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></h3>
                             <p data-en="Tracks, rollers, and fittings for smooth, durable sliding doors." data-es="Rieles, rodillos y accesorios para puertas correderas suaves y duraderas." data-fr="Rails, roulettes et accessoires pour des portes coulissantes fluides et durables."></p>
@@ -907,29 +201,21 @@ section {
                 </div>
                 <div class="feature-grid products-grid">
                     <div class="feature-card">
-                        <div class="feature-media">
-                            <img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop" alt="Pulls and Handles" loading="lazy" onerror="this.style.display='none'">
-                        </div>
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop" alt="Pulls and Handles" loading="lazy" onerror="this.style.display='none'"></div>
                         <div class="feature-body">
-                            <h3 data-en="Pulls & Handles" data-es="Tiradores y Manijas" data-fr="Poignées et Tirants"></h3>
+                            <h3 data-en="Pulls &amp; Handles" data-es="Tiradores y Manijas" data-fr="Poignées et Tirants"></h3>
                             <p data-en="Cabinet and drawer pulls in a range of refined finishes." data-es="Tiradores para gabinetes y cajones en una variedad de acabados refinados." data-fr="Poignées d'armoire et de tiroir dans une gamme de finitions raffinées."></p>
                         </div>
                     </div>
-
                     <div class="feature-card">
-                        <div class="feature-media">
-                            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&h=400&fit=crop" alt="Drawer Slides" loading="lazy" onerror="this.style.display='none'">
-                        </div>
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&h=400&fit=crop" alt="Drawer Slides" loading="lazy" onerror="this.style.display='none'"></div>
                         <div class="feature-body">
                             <h3 data-en="Drawer Slides" data-es="Correderas de Cajón" data-fr="Coulisses de Tiroir"></h3>
                             <p data-en="Smooth, full-extension and soft-close slides for cabinetry." data-es="Correderas suaves, de extensión total y cierre suave para muebles." data-fr="Coulisses fluides, à extension totale et fermeture douce pour le mobilier."></p>
                         </div>
                     </div>
-
                     <div class="feature-card">
-                        <div class="feature-media">
-                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" alt="Hinges" loading="lazy" onerror="this.style.display='none'">
-                        </div>
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" alt="Hinges" loading="lazy" onerror="this.style.display='none'"></div>
                         <div class="feature-body">
                             <h3 data-en="Hinges" data-es="Bisagras" data-fr="Charnières"></h3>
                             <p data-en="Concealed and soft-close hinges for doors and cabinetry." data-es="Bisagras ocultas y de cierre suave para puertas y muebles." data-fr="Charnières invisibles et à fermeture douce pour portes et meubles."></p>
@@ -937,121 +223,49 @@ section {
                     </div>
                 </div>
             </div>
+            <div class="section-cta">
+                <a href="products.html" class="btn btn-primary" data-en="View Products" data-es="Ver Productos" data-fr="Voir les Produits"></a>
+            </div>
         </div>
     </section>
 
-    <!-- 5. Applications / Projects -->
-    <section id="projects" class="projects">
+    <!-- Applications (overview) -->
+    <section class="applications">
         <div class="section-container">
             <div class="section-header">
-                <h2 data-en="Applications & Projects" data-es="Aplicaciones y Proyectos" data-fr="Applications et Projets"></h2>
-                <p data-en="FIXORA hardware proven in real residential, renovation, and commercial projects" data-es="Hardware FIXORA probado en proyectos reales residenciales, de renovación y comerciales" data-fr="Matériel FIXORA éprouvé dans de vrais projets résidentiels, de rénovation et commerciaux"></p>
+                <span class="eyebrow" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></span>
+                <h2 data-en="Where FIXORA Fits" data-es="Dónde Encaja FIXORA" data-fr="Où S'intègre FIXORA"></h2>
+                <p data-en="From new homes to renovations and light commercial spaces" data-es="Desde viviendas nuevas hasta renovaciones y espacios comerciales ligeros" data-fr="Des maisons neuves aux rénovations et aux espaces commerciaux légers"></p>
             </div>
-
             <div class="projects-grid">
                 <div class="project-card">
-                    <img class="project-image" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=300&fit=crop" alt="Modern Residential">
-                    <h3 data-en="Modern Residential" data-es="Residencial Moderno" data-fr="Résidentiel Moderne"></h3>
-                    <p data-en="Contemporary homes finished with premium, reliable hardware throughout." data-es="Casas contemporáneas terminadas con hardware premium y confiable en todo." data-fr="Maisons contemporaines finies avec un matériel premium et fiable partout."></p>
+                    <img class="project-image" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=500&h=300&fit=crop" alt="Residential">
+                    <h3 data-en="Residential" data-es="Residencial" data-fr="Résidentiel"></h3>
+                    <p data-en="Dependable hardware for new homes and everyday entries." data-es="Hardware confiable para viviendas nuevas y entradas cotidianas." data-fr="Une quincaillerie fiable pour maisons neuves et entrées du quotidien."></p>
                 </div>
-
                 <div class="project-card">
-                    <img class="project-image" src="https://images.unsplash.com/photo-1616003325385-dc674cdcd25c?w=500&h=300&fit=crop" alt="Renovation Project">
-                    <h3 data-en="Renovations" data-es="Renovaciones" data-fr="Rénovations"></h3>
-                    <p data-en="Quality upgrades that add lasting value to home and business renovations." data-es="Mejoras de calidad que agregan valor duradero a las renovaciones de hogares y negocios." data-fr="Des améliorations de qualité qui ajoutent une valeur durable aux rénovations résidentielles et commerciales."></p>
+                    <img class="project-image" src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=500&h=300&fit=crop" alt="Renovation" onerror="this.style.visibility='hidden'">
+                    <h3 data-en="Renovation" data-es="Renovación" data-fr="Rénovation"></h3>
+                    <p data-en="Reliable upgrades for remodeling and repair work." data-es="Mejoras confiables para remodelación y reparación." data-fr="Des améliorations fiables pour rénovation et réparation."></p>
                 </div>
-
                 <div class="project-card">
-                    <img class="project-image" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=300&fit=crop" alt="Commercial Spaces">
-                    <h3 data-en="Commercial Spaces" data-es="Espacios Comerciales" data-fr="Espaces Commerciaux"></h3>
-                    <p data-en="Professional buildings outfitted with specification-grade hardware at scale." data-es="Edificios profesionales equipados con hardware de grado de especificación a gran escala." data-fr="Bâtiments professionnels équipés de matériel de qualité spécifiée à grande échelle."></p>
+                    <img class="project-image" src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=500&h=300&fit=crop" alt="Light Commercial">
+                    <h3 data-en="Light Commercial" data-es="Comercial Ligero" data-fr="Commercial Léger"></h3>
+                    <p data-en="Durable hardware for offices, retail, and light commercial." data-es="Hardware duradero para oficinas, comercios y uso comercial ligero." data-fr="Une quincaillerie durable pour bureaux, commerces et usage léger."></p>
                 </div>
+            </div>
+            <div class="section-cta">
+                <a href="applications.html" class="learn-more" data-en="View Applications →" data-es="Ver Aplicaciones →" data-fr="Voir les Applications →"></a>
             </div>
         </div>
     </section>
 
-    <!-- 6. Supply & Support -->
-    <section id="support" class="support">
+    <!-- Partner CTA -->
+    <section class="cta-band">
         <div class="section-container">
-            <div class="section-header">
-                <h2 data-en="Supply & Support" data-es="Suministro y Soporte" data-fr="Approvisionnement et Support"></h2>
-                <p data-en="Warehousing, supply capacity, and after-sales service that build channel trust" data-es="Almacenamiento, capacidad de suministro y servicio posventa que generan confianza en el canal" data-fr="Entreposage, capacité d'approvisionnement et service après-vente qui bâtissent la confiance du canal"></p>
-            </div>
-
-            <div class="support-grid">
-                <div class="support-card">
-                    <h3>🏬 <span data-en="Warehousing & Inventory" data-es="Almacenamiento e Inventario" data-fr="Entreposage et Inventaire"></span></h3>
-                    <ul>
-                        <li data-en="North American distribution center" data-es="Centro de distribución en América del Norte" data-fr="Centre de distribution nord-américain"></li>
-                        <li data-en="Deep stock on core product lines" data-es="Stock profundo en líneas de productos principales" data-fr="Stock important sur les gammes principales"></li>
-                        <li data-en="Real-time inventory visibility" data-es="Visibilidad de inventario en tiempo real" data-fr="Visibilité de l'inventaire en temps réel"></li>
-                    </ul>
-                </div>
-
-                <div class="support-card">
-                    <h3>🚚 <span data-en="Supply Capability" data-es="Capacidad de Suministro" data-fr="Capacité d'Approvisionnement"></span></h3>
-                    <ul>
-                        <li data-en="Dependable lead times" data-es="Plazos de entrega confiables" data-fr="Délais de livraison fiables"></li>
-                        <li data-en="Scalable order fulfillment" data-es="Cumplimiento de pedidos escalable" data-fr="Traitement des commandes évolutif"></li>
-                        <li data-en="Flexible volume programs" data-es="Programas de volumen flexibles" data-fr="Programmes de volume flexibles"></li>
-                    </ul>
-                </div>
-
-                <div class="support-card">
-                    <h3>🛠️ <span data-en="After-Sales Support" data-es="Soporte Posventa" data-fr="Support Après-Vente"></span></h3>
-                    <ul>
-                        <li data-en="Responsive customer service" data-es="Servicio al cliente receptivo" data-fr="Service client réactif"></li>
-                        <li data-en="Warranty & replacement support" data-es="Soporte de garantía y reemplazo" data-fr="Support de garantie et de remplacement"></li>
-                        <li data-en="Technical product guidance" data-es="Orientación técnica de productos" data-fr="Conseils techniques sur les produits"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 7. Partner With Us -->
-    <section id="partner" class="partner">
-        <div class="section-container">
-            <div class="section-header">
-                <h2 data-en="Partner With Us" data-es="Asóciese con Nosotros" data-fr="Devenir Partenaire"></h2>
-                <p data-en="Join the FIXORA distribution network and grow with a partner you can rely on" data-es="Únase a la red de distribución FIXORA y crezca con un socio en el que puede confiar" data-fr="Rejoignez le réseau de distribution FIXORA et grandissez avec un partenaire fiable"></p>
-            </div>
-
-            <div class="partner-grid">
-                <div class="partner-info">
-                    <h3 data-en="Distribution Partnership" data-es="Asociación de Distribución" data-fr="Partenariat de Distribution"></h3>
-                    <p data-en="FIXORA works with distributors, builders, and trade partners across North America to deliver reliable hardware, competitive value, and the support to grow together. Let's build a long-term partnership." data-es="FIXORA trabaja con distribuidores, constructores y socios comerciales en toda América del Norte para ofrecer hardware confiable, valor competitivo y el soporte para crecer juntos. Construyamos una asociación a largo plazo." data-fr="FIXORA collabore avec des distributeurs, des constructeurs et des partenaires commerciaux à travers l'Amérique du Nord pour offrir un matériel fiable, une valeur compétitive et le soutien nécessaire pour grandir ensemble. Bâtissons un partenariat à long terme."></p>
-                    <ul class="values-list">
-                        <li data-en="Competitive wholesale pricing & margins" data-es="Precios mayoristas y márgenes competitivos" data-fr="Prix de gros et marges compétitifs"></li>
-                        <li data-en="Reliable supply and consistent quality" data-es="Suministro confiable y calidad consistente" data-fr="Approvisionnement fiable et qualité constante"></li>
-                        <li data-en="Dedicated partner support" data-es="Soporte dedicado para socios" data-fr="Support dédié aux partenaires"></li>
-                        <li data-en="Long-term, trust-based relationships" data-es="Relaciones a largo plazo basadas en la confianza" data-fr="Relations à long terme basées sur la confiance"></li>
-                    </ul>
-                </div>
-
-                <div class="contact-card">
-                    <h3 data-en="Get In Touch" data-es="Ponte en Contacto" data-fr="Contactez-Nous"></h3>
-
-                    <div class="contact-item">
-                        <strong data-en="Sales Manager" data-es="Gerente de Ventas" data-fr="Gestionnaire des Ventes"></strong>
-                        <p>👤 Mike</p>
-                        <p>📧 mike@probuildercorp.com</p>
-                    </div>
-
-                    <div class="contact-item">
-                        <strong data-en="Distribution Center" data-es="Centro de Distribución" data-fr="Centre de Distribution"></strong>
-                        <p>FIXORA Distribution Center</p>
-                        <p>1822 East Francis Street</p>
-                        <p>Ontario, CA 91761</p>
-                    </div>
-
-                    <div class="contact-item">
-                        <strong data-en="Service Hours" data-es="Horario de Atención" data-fr="Heures de Service"></strong>
-                        <p data-en="Monday - Friday: 8am - 5pm" data-es="Lunes - Viernes: 8am - 5pm" data-fr="Lundi - Vendredi: 8h - 17h"></p>
-                        <p data-en="Pacific Time" data-es="Hora del Pacífico" data-fr="Heure du Pacifique"></p>
-                    </div>
-                </div>
-            </div>
+            <h2 data-en="Become a Distribution Partner" data-es="Conviértase en Socio de Distribución" data-fr="Devenez Partenaire de Distribution"></h2>
+            <p data-en="Join a growing network of trade partners across North America — dependable supply, consistent quality, and long-term business growth." data-es="Únase a una red creciente de socios comerciales en América del Norte — suministro confiable, calidad consistente y crecimiento a largo plazo." data-fr="Rejoignez un réseau croissant de partenaires en Amérique du Nord — approvisionnement fiable, qualité constante et croissance à long terme."></p>
+            <a href="partner.html" class="btn btn-primary" data-en="Become a Partner" data-es="Conviértase en Socio" data-fr="Devenir Partenaire"></a>
         </div>
     </section>
 
@@ -1061,16 +275,18 @@ section {
             <div class="footer-content">
                 <div class="footer-section">
                     <img class="footer-logo" src="images/fixora-logo-white.png" alt="FIXORA">
-                    <p data-en="Engineered for Reliability" data-es="Diseñado para Confiabilidad" data-fr="Conçu pour la Fiabilité"></p>
-                    <p style="font-size: 0.85rem; margin-top: 1rem; color: rgba(255,255,255,0.7);" data-en="Premium hardware distribution partner for North America" data-es="Socio de distribución de hardware premium para América del Norte" data-fr="Partenaire de distribution de matériel premium pour l'Amérique du Nord"></p>
+                    <p class="footer-tagline" data-en="Built for the North American Trade." data-es="Hecho para el Sector de América del Norte." data-fr="Conçu pour les Professionnels d'Amérique du Nord."></p>
+                    <p style="font-size:0.85rem; margin-top:1rem; color:rgba(255,255,255,0.7);" data-en="Professional hardware solutions for distribution, backed by ProBuilder US." data-es="Soluciones profesionales de herrajes para la distribución, respaldadas por ProBuilder US." data-fr="Solutions de quincaillerie professionnelle pour la distribution, soutenues par ProBuilder US."></p>
                 </div>
                 <div class="footer-section">
                     <h4 data-en="Quick Links" data-es="Enlaces Rápidos" data-fr="Liens Rapides"></h4>
                     <ul>
-                        <li><a href="#serve" data-en="Who We Serve" data-es="A Quién Servimos" data-fr="Qui Nous Servons"></a></li>
-                        <li><a href="#why" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></a></li>
-                        <li><a href="#products" data-en="Products" data-es="Productos" data-fr="Produits"></a></li>
-                        <li><a href="#partner" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
+                        <li><a href="about.html" data-en="About" data-es="Acerca de" data-fr="À Propos"></a></li>
+                        <li><a href="why.html" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></a></li>
+                        <li><a href="products.html" data-en="Products" data-es="Productos" data-fr="Produits"></a></li>
+                        <li><a href="applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
+                        <li><a href="partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
+                        <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -1085,48 +301,6 @@ section {
         </div>
     </footer>
 
-    <script>
-let currentLanguage = localStorage.getItem('fixora-language') || 'en';
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('language').value = currentLanguage;
-    applyLanguage(currentLanguage);
-
-    const navMenu = document.getElementById('navMenu');
-    document.querySelectorAll('#navMenu a').forEach(link => {
-        link.addEventListener('click', function() {
-            navMenu.classList.remove('active');
-        });
-    });
-});
-
-function changeLanguage(lang) {
-    currentLanguage = lang;
-    localStorage.setItem('fixora-language', lang);
-    applyLanguage(lang);
-}
-
-function applyLanguage(lang) {
-    const elements = document.querySelectorAll('[data-en]');
-    elements.forEach(element => {
-        const text = element.getAttribute(`data-${lang}`);
-        if (text) element.textContent = text;
-    });
-
-    if (lang === 'es') document.title = 'FIXORA - Diseñado para Confiabilidad';
-    else if (lang === 'fr') document.title = 'FIXORA - Conçu pour la Fiabilité';
-    else document.title = 'FIXORA - Engineered for Reliability';
-
-    document.getElementById('language').value = lang;
-}
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) target.scrollIntoView({ behavior: 'smooth' });
-    });
-});
-    </script>
+    <script src="js/site.js"></script>
 </body>
 </html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="Products | FIXORA" data-es="Productos | FIXORA" data-fr="Produits | FIXORA">Products | FIXORA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img class="logo-img" src="images/fixora-logo.png" alt="FIXORA"></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-es="Inicio" data-fr="Accueil"></a></li>
+                <li><a href="about.html" data-en="About" data-es="Acerca de" data-fr="À Propos"></a></li>
+                <li><a href="why.html" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></a></li>
+                <li class="nav-item has-mega">
+                    <a href="products.html" data-en="Products" data-es="Productos" data-fr="Produits"></a>
+                    <div class="mega-menu">
+                        <div class="mega-inner">
+                            <div class="mega-col">
+                                <a class="mega-thumb" href="products.html#door-hardware"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=640&h=440&fit=crop" alt="Door Hardware" onerror="this.style.display='none'"></a>
+                                <a class="mega-cat" href="products.html#door-hardware">
+                                    <span data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></span>
+                                    <span class="status available" data-en="Available" data-es="Disponible" data-fr="Disponible"></span>
+                                </a>
+                                <ul class="mega-list">
+                                    <li><a href="products/smart-locks.html" data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></a></li>
+                                    <li><a href="products.html#door-hardware" data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></a></li>
+                                    <li><a href="products.html#door-hardware" data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <a class="mega-thumb" href="products.html#furniture-hardware"><img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop" alt="Furniture Hardware" onerror="this.style.visibility='hidden'"></a>
+                                <a class="mega-cat" href="products.html#furniture-hardware">
+                                    <span data-en="Furniture Hardware" data-es="Herrajes para Muebles" data-fr="Quincaillerie de Meuble"></span>
+                                    <span class="status soon" data-en="Coming Soon" data-es="Próximamente" data-fr="Bientôt"></span>
+                                </a>
+                                <ul class="mega-list">
+                                    <li><a href="products.html#furniture-hardware" data-en="Pulls &amp; Handles" data-es="Tiradores y Manijas" data-fr="Poignées et Tirants"></a></li>
+                                    <li><a href="products.html#furniture-hardware" data-en="Drawer Slides" data-es="Correderas de Cajón" data-fr="Coulisses de Tiroir"></a></li>
+                                    <li><a href="products.html#furniture-hardware" data-en="Hinges" data-es="Bisagras" data-fr="Charnières"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
+                <li><a href="partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
+                <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
+                <li class="language-selector">
+                    <select id="language" onchange="changeLanguage(this.value)">
+                        <option value="en">EN</option><option value="es">ES</option><option value="fr">FR</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="section-container">
+            <div class="breadcrumb"><a href="index.html" data-en="Home" data-es="Inicio" data-fr="Accueil"></a> / <span data-en="Products" data-es="Productos" data-fr="Produits"></span></div>
+            <span class="eyebrow" data-en="Product System" data-es="Sistema de Productos" data-fr="Système de Produits"></span>
+            <h1 data-en="Focused Hardware Lines" data-es="Líneas de Herrajes Enfocadas" data-fr="Des Gammes de Quincaillerie Ciblées"></h1>
+            <p data-en="Product lines that are easy to stock, easy to explain, and easy to sell — focused on door hardware today, with more on the way." data-es="Líneas de productos fáciles de almacenar, explicar y vender — enfocadas hoy en herrajes para puertas, con más en camino." data-fr="Des gammes faciles à stocker, à expliquer et à vendre — axées aujourd'hui sur la quincaillerie de porte, avec d'autres à venir."></p>
+        </div>
+    </section>
+
+    <!-- Door Locks -->
+    <section class="products">
+        <div class="section-container">
+            <!-- Door Hardware -->
+            <div class="product-group" id="door-hardware">
+                <div class="product-group-head">
+                    <h3 class="product-group-title" data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></h3>
+                    <span class="product-status available" data-en="Available Now" data-es="Disponible Ahora" data-fr="Disponible Maintenant"></span>
+                </div>
+                <div class="feature-grid products-grid">
+                    <a class="feature-card" href="products/smart-locks.html">
+                        <div class="feature-media"><img src="images/products/smart-lock-9901.jpg" alt="Smart Locks" loading="lazy"></div>
+                        <div class="feature-body">
+                            <h3 data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></h3>
+                            <p data-en="Keypad, fingerprint, and face-recognition locks in a clean matte-black finish." data-es="Cerraduras con teclado, huella digital y reconocimiento facial en un acabado negro mate." data-fr="Serrures à clavier, empreinte digitale et reconnaissance faciale, finition noir mat."></p>
+                            <span class="card-cta" data-en="View Smart Locks →" data-es="Ver Cerraduras Inteligentes →" data-fr="Voir les Serrures Connectées →"></span>
+                        </div>
+                    </a>
+                    <div class="feature-card">
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=600&h=400&fit=crop" alt="Mechanical Locks" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="feature-body">
+                            <h3 data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></h3>
+                            <p data-en="Deadbolts, locksets, and entry hardware built for lasting security." data-es="Cerrojos, juegos de cerraduras y herrajes de entrada para una seguridad duradera." data-fr="Pênes dormants, serrures et quincaillerie d'entrée pour une sécurité durable."></p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=400&fit=crop" alt="Sliding Door Hardware" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="feature-body">
+                            <h3 data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></h3>
+                            <p data-en="Tracks, rollers, and fittings for smooth, quiet, durable sliding doors." data-es="Rieles, rodillos y accesorios para puertas correderas suaves, silenciosas y duraderas." data-fr="Rails, roulettes et accessoires pour des portes coulissantes fluides et durables."></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Furniture Hardware -->
+            <div class="product-group is-upcoming" id="furniture-hardware">
+                <div class="product-group-head">
+                    <h3 class="product-group-title" data-en="Furniture Hardware" data-es="Herrajes para Muebles" data-fr="Quincaillerie de Meuble"></h3>
+                    <span class="product-status" data-en="Coming Soon" data-es="Próximamente" data-fr="Bientôt Disponible"></span>
+                </div>
+                <div class="feature-grid products-grid">
+                    <div class="feature-card">
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop" alt="Pulls and Handles" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="feature-body">
+                            <h3 data-en="Pulls &amp; Handles" data-es="Tiradores y Manijas" data-fr="Poignées et Tirants"></h3>
+                            <p data-en="Cabinet and drawer pulls in a range of refined finishes." data-es="Tiradores para gabinetes y cajones en una variedad de acabados refinados." data-fr="Poignées d'armoire et de tiroir dans une gamme de finitions raffinées."></p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=600&h=400&fit=crop" alt="Drawer Slides" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="feature-body">
+                            <h3 data-en="Drawer Slides" data-es="Correderas de Cajón" data-fr="Coulisses de Tiroir"></h3>
+                            <p data-en="Smooth, full-extension and soft-close slides for cabinetry." data-es="Correderas suaves, de extensión total y cierre suave para muebles." data-fr="Coulisses fluides, à extension totale et fermeture douce pour le mobilier."></p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-media"><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&h=400&fit=crop" alt="Hinges" loading="lazy" onerror="this.style.display='none'"></div>
+                        <div class="feature-body">
+                            <h3 data-en="Hinges" data-es="Bisagras" data-fr="Charnières"></h3>
+                            <p data-en="Concealed and soft-close hinges for doors and cabinetry." data-es="Bisagras ocultas y de cierre suave para puertas y muebles." data-fr="Charnières invisibles et à fermeture douce pour portes et meubles."></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="section-container">
+            <h2 data-en="Request the FIXORA Catalog" data-es="Solicite el Catálogo FIXORA" data-fr="Demandez le Catalogue FIXORA"></h2>
+            <p data-en="Get full product details, specifications, and trade pricing for your business." data-es="Obtenga detalles completos de productos, especificaciones y precios comerciales para su negocio." data-fr="Obtenez les détails produits complets, les spécifications et les prix professionnels pour votre entreprise."></p>
+            <a href="mailto:mike@probuildercorp.com?subject=FIXORA%20Catalog%20Request" class="btn btn-primary" data-en="Request Catalog" data-es="Solicitar Catálogo" data-fr="Demander un Catalogue"></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img class="footer-logo" src="images/fixora-logo-white.png" alt="FIXORA">
+                    <p class="footer-tagline" data-en="Built for the North American Trade." data-es="Hecho para el Sector de América del Norte." data-fr="Conçu pour les Professionnels d'Amérique du Nord."></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-es="Enlaces Rápidos" data-fr="Liens Rapides"></h4>
+                    <ul>
+                        <li><a href="about.html" data-en="About" data-es="Acerca de" data-fr="À Propos"></a></li>
+                        <li><a href="why.html" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></a></li>
+                        <li><a href="products.html" data-en="Products" data-es="Productos" data-fr="Produits"></a></li>
+                        <li><a href="applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
+                        <li><a href="partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
+                        <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-es="Contacto" data-fr="Contact"></h4>
+                    <p>📧 mike@probuildercorp.com</p>
+                    <p>📍 Ontario, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 FIXORA. <span data-en="All rights reserved." data-es="Todos los derechos reservados." data-fr="Tous droits réservés."></span></p></div>
+        </div>
+    </footer>
+
+    <script src="js/site.js"></script>
+</body>
+</html>

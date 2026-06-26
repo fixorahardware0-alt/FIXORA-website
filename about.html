@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-en="About | FIXORA" data-es="Acerca de | FIXORA" data-fr="À Propos | FIXORA">About | FIXORA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo"><img class="logo-img" src="images/fixora-logo.png" alt="FIXORA"></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" data-en="Home" data-es="Inicio" data-fr="Accueil"></a></li>
+                <li><a href="about.html" data-en="About" data-es="Acerca de" data-fr="À Propos"></a></li>
+                <li><a href="why.html" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></a></li>
+                <li class="nav-item has-mega">
+                    <a href="products.html" data-en="Products" data-es="Productos" data-fr="Produits"></a>
+                    <div class="mega-menu">
+                        <div class="mega-inner">
+                            <div class="mega-col">
+                                <a class="mega-thumb" href="products.html#door-hardware"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=640&h=440&fit=crop" alt="Door Hardware" onerror="this.style.display='none'"></a>
+                                <a class="mega-cat" href="products.html#door-hardware">
+                                    <span data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></span>
+                                    <span class="status available" data-en="Available" data-es="Disponible" data-fr="Disponible"></span>
+                                </a>
+                                <ul class="mega-list">
+                                    <li><a href="products/smart-locks.html" data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></a></li>
+                                    <li><a href="products.html#door-hardware" data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></a></li>
+                                    <li><a href="products.html#door-hardware" data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <a class="mega-thumb" href="products.html#furniture-hardware"><img src="https://images.unsplash.com/photo-1556909212-d5b604d0c90d?w=600&h=400&fit=crop" alt="Furniture Hardware" onerror="this.style.visibility='hidden'"></a>
+                                <a class="mega-cat" href="products.html#furniture-hardware">
+                                    <span data-en="Furniture Hardware" data-es="Herrajes para Muebles" data-fr="Quincaillerie de Meuble"></span>
+                                    <span class="status soon" data-en="Coming Soon" data-es="Próximamente" data-fr="Bientôt"></span>
+                                </a>
+                                <ul class="mega-list">
+                                    <li><a href="products.html#furniture-hardware" data-en="Pulls &amp; Handles" data-es="Tiradores y Manijas" data-fr="Poignées et Tirants"></a></li>
+                                    <li><a href="products.html#furniture-hardware" data-en="Drawer Slides" data-es="Correderas de Cajón" data-fr="Coulisses de Tiroir"></a></li>
+                                    <li><a href="products.html#furniture-hardware" data-en="Hinges" data-es="Bisagras" data-fr="Charnières"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
+                <li><a href="partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
+                <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
+                <li class="language-selector">
+                    <select id="language" onchange="changeLanguage(this.value)">
+                        <option value="en">EN</option><option value="es">ES</option><option value="fr">FR</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page hero -->
+    <section class="page-hero">
+        <div class="section-container">
+            <div class="breadcrumb"><a href="index.html" data-en="Home" data-es="Inicio" data-fr="Accueil"></a> / <span data-en="About" data-es="Acerca de" data-fr="À Propos"></span></div>
+            <span class="eyebrow" data-en="About FIXORA" data-es="Acerca de FIXORA" data-fr="À Propos de FIXORA"></span>
+            <h1 data-en="Built for the North American Trade" data-es="Hecho para el Sector de América del Norte" data-fr="Conçu pour les Professionnels d'Amérique du Nord"></h1>
+            <p data-en="A hardware brand built to serve distributors, builders, and trade professionals across North America — backed by ProBuilder US and global manufacturing expertise." data-es="Una marca de herrajes creada para servir a distribuidores, constructores y profesionales del sector en América del Norte — respaldada por ProBuilder US y experiencia de fabricación global." data-fr="Une marque de quincaillerie conçue pour servir les distributeurs, les constructeurs et les professionnels du métier en Amérique du Nord — soutenue par ProBuilder US et une expertise de fabrication mondiale."></p>
+        </div>
+    </section>
+
+    <!-- Who We Are -->
+    <section>
+        <div class="section-container">
+            <div class="split">
+                <div class="split-text">
+                    <span class="eyebrow" data-en="Who We Are" data-es="Quiénes Somos" data-fr="Qui Nous Sommes"></span>
+                    <h2 data-en="A trade-first hardware brand" data-es="Una marca de herrajes para el sector" data-fr="Une marque de quincaillerie pour les professionnels"></h2>
+                    <p data-en="FIXORA is a North America-focused hardware brand created to give distributors and trade partners a dependable, easy-to-sell product line. We focus on the things that matter most to the trade: reliable supply, consistent quality, and professional support." data-es="FIXORA es una marca de herrajes enfocada en América del Norte, creada para ofrecer a los distribuidores y socios comerciales una línea de productos confiable y fácil de vender. Nos enfocamos en lo que más importa al sector: suministro confiable, calidad consistente y soporte profesional." data-fr="FIXORA est une marque de quincaillerie axée sur l'Amérique du Nord, créée pour offrir aux distributeurs et partenaires une gamme fiable et facile à vendre. Nous nous concentrons sur l'essentiel pour les professionnels : approvisionnement fiable, qualité constante et support professionnel."></p>
+                    <p data-en="We are not a marketplace and not a factory portal — we are a brand partner invested in helping your business grow." data-es="No somos un mercado ni un portal de fábrica — somos un socio de marca comprometido con el crecimiento de su negocio." data-fr="Nous ne sommes ni une place de marché ni un portail d'usine — nous sommes un partenaire de marque investi dans la croissance de votre entreprise."></p>
+                </div>
+                <div class="split-visual"><img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&h=520&fit=crop" alt="FIXORA team" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section style="background:var(--warm-bg);">
+        <div class="section-container">
+            <div class="split reverse">
+                <div class="split-text">
+                    <span class="eyebrow" data-en="Brand Story" data-es="Historia de la Marca" data-fr="Histoire de la Marque"></span>
+                    <h2 data-en="Why we exist" data-es="Por Qué Existimos" data-fr="Pourquoi Nous Existons"></h2>
+                    <p data-en="Too many trade partners face long lead times, inconsistent quality, and limited support when sourcing hardware overseas. FIXORA was built to close that gap — combining global manufacturing capability with North America-based service and a brand you can stand behind." data-es="Demasiados socios comerciales enfrentan plazos largos, calidad inconsistente y soporte limitado al abastecerse de herrajes en el extranjero. FIXORA fue creada para cerrar esa brecha — combinando capacidad de fabricación global con servicio en América del Norte y una marca que puede respaldar." data-fr="Trop de partenaires font face à de longs délais, une qualité inconstante et un support limité lorsqu'ils s'approvisionnent à l'étranger. FIXORA a été créée pour combler cet écart — en combinant une capacité de fabrication mondiale, un service basé en Amérique du Nord et une marque sur laquelle vous pouvez compter."></p>
+                    <a href="why.html" class="learn-more" data-en="See why partners choose FIXORA →" data-es="Vea por qué los socios eligen FIXORA →" data-fr="Voir pourquoi les partenaires choisissent FIXORA →"></a>
+                </div>
+                <div class="split-visual"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=700&h=520&fit=crop" alt="Manufacturing" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission / Vision / Why -->
+    <section>
+        <div class="section-container">
+            <div class="section-header">
+                <span class="eyebrow" data-en="What Drives Us" data-es="Lo Que Nos Impulsa" data-fr="Ce Qui Nous Anime"></span>
+                <h2 data-en="Mission, Vision & Purpose" data-es="Misión, Visión y Propósito" data-fr="Mission, Vision et Raison d'Être"></h2>
+            </div>
+            <div class="value-grid">
+                <div class="value-card">
+                    <h3 data-en="Our Mission" data-es="Nuestra Misión" data-fr="Notre Mission"></h3>
+                    <p data-en="To give North American trade partners dependable hardware and the supply reliability to grow with confidence." data-es="Brindar a los socios comerciales de América del Norte herrajes confiables y la fiabilidad de suministro para crecer con confianza." data-fr="Offrir aux partenaires nord-américains une quincaillerie fiable et la fiabilité d'approvisionnement pour se développer en confiance."></p>
+                </div>
+                <div class="value-card">
+                    <h3 data-en="Our Vision" data-es="Nuestra Visión" data-fr="Notre Vision"></h3>
+                    <p data-en="To become a trusted hardware brand across North American distribution channels." data-es="Convertirnos en una marca de herrajes de confianza en los canales de distribución de América del Norte." data-fr="Devenir une marque de quincaillerie de confiance dans les canaux de distribution nord-américains."></p>
+                </div>
+                <div class="value-card">
+                    <h3 data-en="Our Purpose" data-es="Nuestro Propósito" data-fr="Notre Raison d'Être"></h3>
+                    <p data-en="To make sourcing simpler, more reliable, and more profitable for our partners." data-es="Hacer que el abastecimiento sea más simple, confiable y rentable para nuestros socios." data-fr="Rendre l'approvisionnement plus simple, plus fiable et plus rentable pour nos partenaires."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Capability stats -->
+    <section style="background:var(--warm-bg);">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="eyebrow" data-en="Our Foundation" data-es="Nuestra Base" data-fr="Notre Fondation"></span>
+                <h2 data-en="Manufacturing & Distribution" data-es="Fabricación y Distribución" data-fr="Fabrication et Distribution"></h2>
+                <p data-en="Global manufacturing expertise paired with North America-based distribution support" data-es="Experiencia de fabricación global combinada con soporte de distribución en América del Norte" data-fr="Une expertise de fabrication mondiale associée à un support de distribution basé en Amérique du Nord"></p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat"><div class="num">PB US</div><p data-en="Backed by ProBuilder US" data-es="Respaldado por ProBuilder US" data-fr="Soutenu par ProBuilder US"></p></div>
+                <div class="stat"><div class="num">Global</div><p data-en="Manufacturing expertise" data-es="Experiencia de fabricación" data-fr="Expertise de fabrication"></p></div>
+                <div class="stat"><div class="num">N.A.</div><p data-en="Distribution support" data-es="Soporte de distribución" data-fr="Support de distribution"></p></div>
+                <div class="stat"><div class="num">QC</div><p data-en="Consistent quality control" data-es="Control de calidad consistente" data-fr="Contrôle qualité constant"></p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <section>
+        <div class="section-container">
+            <div class="section-header">
+                <span class="eyebrow" data-en="Our Path" data-es="Nuestro Camino" data-fr="Notre Parcours"></span>
+                <h2 data-en="Building the FIXORA Brand" data-es="Construyendo la Marca FIXORA" data-fr="Construire la Marque FIXORA"></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="yr" data-en="Foundation" data-es="Fundación" data-fr="Fondation"></span>
+                    <h3 data-en="Backed by ProBuilder US" data-es="Respaldado por ProBuilder US" data-fr="Soutenu par ProBuilder US"></h3>
+                    <p data-en="FIXORA is launched with the support of ProBuilder US and established manufacturing partners." data-es="FIXORA se lanza con el apoyo de ProBuilder US y socios de fabricación establecidos." data-fr="FIXORA est lancée avec le soutien de ProBuilder US et de partenaires de fabrication établis."></p>
+                </div>
+                <div class="timeline-item">
+                    <span class="yr" data-en="Today" data-es="Hoy" data-fr="Aujourd'hui"></span>
+                    <h3 data-en="Focused Door Hardware Lines" data-es="Líneas Enfocadas de Herrajes para Puertas" data-fr="Gammes Ciblées de Quincaillerie de Porte"></h3>
+                    <p data-en="Launching with focused, easy-to-sell door hardware and smart lock lines for North American partners." data-es="Comenzando con líneas enfocadas y fáciles de vender de herrajes para puertas y cerraduras inteligentes para socios de América del Norte." data-fr="Démarrage avec des gammes ciblées et faciles à vendre de quincaillerie de porte et de serrures connectées pour les partenaires nord-américains."></p>
+                </div>
+                <div class="timeline-item">
+                    <span class="yr" data-en="Next" data-es="Próximo" data-fr="Prochaine Étape"></span>
+                    <h3 data-en="Expanding the Range" data-es="Ampliando la Gama" data-fr="Élargir la Gamme"></h3>
+                    <p data-en="Furniture hardware and additional categories are on the way as the partner network grows." data-es="Los herrajes para muebles y categorías adicionales están en camino a medida que crece la red de socios." data-fr="La quincaillerie de meuble et d'autres catégories arrivent à mesure que le réseau de partenaires se développe."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+        <div class="section-container">
+            <h2 data-en="Partner With a Brand Built for the Trade" data-es="Asóciese con una Marca Hecha para el Sector" data-fr="Associez-vous à une Marque Conçue pour les Professionnels"></h2>
+            <p data-en="Reliable supply, consistent quality, and long-term partnership across North America." data-es="Suministro confiable, calidad consistente y asociación a largo plazo en América del Norte." data-fr="Approvisionnement fiable, qualité constante et partenariat à long terme en Amérique du Nord."></p>
+            <a href="partner.html" class="btn btn-primary" data-en="Become a Partner" data-es="Conviértase en Socio" data-fr="Devenir Partenaire"></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img class="footer-logo" src="images/fixora-logo-white.png" alt="FIXORA">
+                    <p class="footer-tagline" data-en="Built for the North American Trade." data-es="Hecho para el Sector de América del Norte." data-fr="Conçu pour les Professionnels d'Amérique du Nord."></p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-es="Enlaces Rápidos" data-fr="Liens Rapides"></h4>
+                    <ul>
+                        <li><a href="about.html" data-en="About" data-es="Acerca de" data-fr="À Propos"></a></li>
+                        <li><a href="why.html" data-en="Why FIXORA" data-es="Por Qué FIXORA" data-fr="Pourquoi FIXORA"></a></li>
+                        <li><a href="products.html" data-en="Products" data-es="Productos" data-fr="Produits"></a></li>
+                        <li><a href="applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
+                        <li><a href="partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
+                        <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Contact" data-es="Contacto" data-fr="Contact"></h4>
+                    <p>📧 mike@probuildercorp.com</p>
+                    <p>📍 Ontario, CA</p>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2024 FIXORA. <span data-en="All rights reserved." data-es="Todos los derechos reservados." data-fr="Tous droits réservés."></span></p></div>
+        </div>
+    </footer>
+
+    <script src="js/site.js"></script>
+</body>
+</html>
