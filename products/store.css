@@ -126,3 +126,23 @@ button { font-family: inherit; cursor: pointer; border: none; }
     .mega-cat { font-size: 1rem; border-bottom: none; padding-bottom: 0.3rem; margin-bottom: 0.2rem; }
     .mega-list li a { padding: 0.45rem 0 0.45rem 0.8rem; font-size: 0.9rem; }
 }
+
+
+/* ===== door-hardware (.dh) ===== */
+.dh .product-card .media { background:#fff; }
+.dh .product-card .media img { object-fit:contain; padding:18px; }
+.dh .gallery .main-img { object-fit:contain; background:#fff; padding:1.5rem; }
+.dh .thumbs img { object-fit:contain; background:#fff; padding:4px; }
+.dh .spec-rows { list-style:none; margin-bottom:2.2rem; }
+.dh .spec-rows li { display:flex; gap:1rem; padding:0.6rem 0; border-bottom:1px solid var(--border-color); font-size:0.9rem; }
+.dh .spec-rows .k { flex:0 0 40%; font-weight:600; color:var(--text-dark); }
+.dh .spec-rows .v { color:var(--text-light); }
+.dh .finishes { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2rem; }
+.dh .finish-chip { font-size:0.72rem; letter-spacing:0.3px; border:1px solid var(--border-color); border-radius:20px; padding:0.35rem 0.85rem; color:var(--text-light); }
+.dh .detail-info h2 { margin-top:0.5rem; }
+
+/* smart-lock download btn */
+.btn-row { display:flex; flex-direction:column; gap:1rem; align-items:stretch; max-width:420px; }
+.btn-row .btn { width:100%; text-align:center; }
+.btn-download { background:transparent; color:var(--text-dark); border:1px solid var(--border-color); }
+.btn-download:hover { background:transparent; border-color:var(--primary-orange); color:var(--primary-orange); box-shadow:none; }

@@ -21,15 +21,15 @@
                     <div class="mega-menu">
                         <div class="mega-inner">
                             <div class="mega-col">
-                                <a class="mega-thumb" href="products.html#door-hardware"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=640&h=440&fit=crop" alt="Door Hardware" onerror="this.style.display='none'"></a>
+                                <a class="mega-thumb" href="products.html#door-hardware"><img src="images/products/Smart_Locks/DLE652_3.png" alt="FIXORA Smart Lock" style="object-fit:cover;" onerror="this.style.display='none'"></a>
                                 <a class="mega-cat" href="products.html#door-hardware">
                                     <span data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></span>
                                     <span class="status available" data-en="Available" data-es="Disponible" data-fr="Disponible"></span>
                                 </a>
                                 <ul class="mega-list">
                                     <li><a href="products/smart-locks.html" data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></a></li>
-                                    <li><a href="products.html#door-hardware" data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></a></li>
-                                    <li><a href="products.html#door-hardware" data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></a></li>
+                                    <li><a href="products/mechanical-locks.html" data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></a></li>
+                                    <li><a href="products/sliding-door-hardware.html" data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></a></li>
                                 </ul>
                             </div>
                             <div class="mega-col">
@@ -49,7 +49,7 @@
                 </li>
                 <li><a href="applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
                 <li><a href="partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
-                <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
+                <li><a href="resources.html" data-en="Resources" data-es="Recursos" data-fr="Ressources"></a></li>
                 <li class="language-selector">
                     <select id="language" onchange="changeLanguage(this.value)">
                         <option value="en">EN</option><option value="es">ES</option><option value="fr">FR</option>
@@ -94,37 +94,64 @@
                     </div>
                 </div>
 
-                <!-- Inquiry form -->
+                <!-- Distributor inquiry form -->
                 <div>
-                    <h3 style="font-family:'Marcellus',serif; font-weight:400; font-size:1.6rem; margin-bottom:0.6rem;" data-en="Send an Inquiry" data-es="Enviar una Consulta" data-fr="Envoyer une Demande"></h3>
-                    <p style="color:var(--text-light); margin-bottom:1.6rem;" data-en="Fill out the form and we'll get back to you shortly." data-es="Complete el formulario y nos pondremos en contacto pronto." data-fr="Remplissez le formulaire et nous vous répondrons rapidement."></p>
+                    <h3 style="font-family:'Marcellus',serif; font-weight:400; font-size:1.6rem; margin-bottom:0.6rem;" data-en="Distributor Inquiry" data-es="Consulta de Distribuidor" data-fr="Demande de Distributeur"></h3>
+                    <p style="color:var(--text-light); margin-bottom:1.6rem;" data-en="Tell us about your business and we'll follow up with pricing, catalogs, and partnership details." data-es="Cuéntenos sobre su negocio y le responderemos con precios, catálogos y detalles de asociación." data-fr="Parlez-nous de votre entreprise et nous reviendrons vers vous avec les prix, les catalogues et les détails du partenariat."></p>
                     <form class="contact-form" action="mailto:mike@probuildercorp.com" method="post" enctype="text/plain">
                         <div>
-                            <label data-en="Name" data-es="Nombre" data-fr="Nom"></label>
+                            <label data-en="Contact Name" data-es="Nombre de Contacto" data-fr="Nom du Contact"></label>
                             <input type="text" name="name" required>
                         </div>
                         <div>
-                            <label data-en="Company" data-es="Empresa" data-fr="Entreprise"></label>
-                            <input type="text" name="company">
+                            <label data-en="Company Name" data-es="Nombre de la Empresa" data-fr="Nom de l'Entreprise"></label>
+                            <input type="text" name="company" required>
                         </div>
                         <div>
                             <label data-en="Email" data-es="Correo Electrónico" data-fr="E-mail"></label>
                             <input type="email" name="email" required>
                         </div>
                         <div>
-                            <label data-en="I am a..." data-es="Soy un..." data-fr="Je suis..."></label>
-                            <select name="role">
+                            <label data-en="Business Type" data-es="Tipo de Negocio" data-fr="Type d'Entreprise"></label>
+                            <select name="business_type">
+                                <option value="" data-en="Select…" data-es="Seleccionar…" data-fr="Sélectionner…">Select…</option>
                                 <option data-en="Distributor" data-es="Distribuidor" data-fr="Distributeur">Distributor</option>
+                                <option data-en="Wholesaler" data-es="Mayorista" data-fr="Grossiste">Wholesaler</option>
+                                <option data-en="Retailer" data-es="Minorista" data-fr="Détaillant">Retailer</option>
                                 <option data-en="Builder / Contractor" data-es="Constructor / Contratista" data-fr="Constructeur / Entrepreneur">Builder / Contractor</option>
-                                <option data-en="Designer / Architect" data-es="Diseñador / Arquitecto" data-fr="Designer / Architecte">Designer / Architect</option>
                                 <option data-en="Other" data-es="Otro" data-fr="Autre">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label data-en="Interested Product Category" data-es="Categoría de Producto de Interés" data-fr="Catégorie de Produit d'Intérêt"></label>
+                            <select name="product_category">
+                                <option value="" data-en="Select…" data-es="Seleccionar…" data-fr="Sélectionner…">Select…</option>
+                                <option data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées">Smart Locks</option>
+                                <option data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques">Mechanical Locks</option>
+                                <option data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante">Sliding Door Hardware</option>
+                                <option data-en="Multiple / All Categories" data-es="Varias / Todas las Categorías" data-fr="Plusieurs / Toutes les Catégories">Multiple / All Categories</option>
+                                <option data-en="Other" data-es="Otro" data-fr="Autre">Other</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label data-en="Country / Region" data-es="País / Región" data-fr="Pays / Région"></label>
+                            <input type="text" name="country" required>
+                        </div>
+                        <div>
+                            <label data-en="Annual Purchase Volume (optional)" data-es="Volumen de Compra Anual (opcional)" data-fr="Volume d'Achat Annuel (optionnel)"></label>
+                            <select name="annual_volume">
+                                <option value="" data-en="Prefer not to say" data-es="Prefiero no decirlo" data-fr="Je préfère ne pas répondre">Prefer not to say</option>
+                                <option>Under $50K</option>
+                                <option>$50K – $250K</option>
+                                <option>$250K – $1M</option>
+                                <option>$1M+</option>
                             </select>
                         </div>
                         <div>
                             <label data-en="Message" data-es="Mensaje" data-fr="Message"></label>
                             <textarea name="message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" data-en="Send Inquiry" data-es="Enviar Consulta" data-fr="Envoyer la Demande"></button>
+                        <button type="submit" class="btn btn-primary" data-en="Submit Inquiry" data-es="Enviar Consulta" data-fr="Envoyer la Demande"></button>
                     </form>
                     <p style="font-size:0.82rem; color:var(--text-light); margin-top:1rem;" data-en="Prefer email? Write to mike@probuildercorp.com" data-es="¿Prefiere el correo? Escriba a mike@probuildercorp.com" data-fr="Vous préférez l'e-mail ? Écrivez à mike@probuildercorp.com"></p>
                 </div>
@@ -148,6 +175,14 @@
                         <li><a href="applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
                         <li><a href="partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
                         <li><a href="contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Resources" data-es="Recursos" data-fr="Ressources"></h4>
+                    <ul>
+                        <li><a href="downloads/FIXORA-Smart-Lock-Catalogue.pdf" data-en="Product Catalog" data-es="Catálogo de Productos" data-fr="Catalogue Produits"></a></li>
+                        <li><a href="faq.html" data-en="FAQs" data-es="Preguntas Frecuentes" data-fr="FAQ"></a></li>
+                        <li><a href="contact.html" data-en="Contact Sales" data-es="Contactar Ventas" data-fr="Contacter les Ventes"></a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

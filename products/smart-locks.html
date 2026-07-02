@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart Locks | FIXORA</title>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="store.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Locks | FIXORA</title>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="store.css">
 </head>
-<body>
-    <nav class="navbar">
+<body class="dh">
+<nav class="navbar">
         <div class="nav-container">
             <a href="../index.html" class="logo"><img class="logo-img" src="../images/fixora-logo.png" alt="FIXORA"></a>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">&#9776;</button>
@@ -21,15 +21,15 @@
                     <div class="mega-menu">
                         <div class="mega-inner">
                             <div class="mega-col">
-                                <a class="mega-thumb" href="../products.html#door-hardware"><img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=640&h=440&fit=crop" alt="Door Hardware" onerror="this.style.display='none'"></a>
+                                <a class="mega-thumb" href="../products.html#door-hardware"><img src="../images/products/Smart_Locks/DLE652_3.png" alt="FIXORA Smart Lock" style="object-fit:cover;" onerror="this.style.display='none'"></a>
                                 <a class="mega-cat" href="../products.html#door-hardware">
                                     <span data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></span>
                                     <span class="status available" data-en="Available" data-es="Disponible" data-fr="Disponible"></span>
                                 </a>
                                 <ul class="mega-list">
                                     <li><a href="smart-locks.html" data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></a></li>
-                                    <li><a href="../products.html#door-hardware" data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></a></li>
-                                    <li><a href="../products.html#door-hardware" data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></a></li>
+                                    <li><a href="mechanical-locks.html" data-en="Mechanical Locks" data-es="Cerraduras Mecánicas" data-fr="Serrures Mécaniques"></a></li>
+                                    <li><a href="sliding-door-hardware.html" data-en="Sliding Door Hardware" data-es="Herrajes para Puertas Correderas" data-fr="Quincaillerie de Porte Coulissante"></a></li>
                                 </ul>
                             </div>
                             <div class="mega-col">
@@ -49,7 +49,7 @@
                 </li>
                 <li><a href="../applications.html" data-en="Applications" data-es="Aplicaciones" data-fr="Applications"></a></li>
                 <li><a href="../partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a></li>
-                <li><a href="../contact.html" data-en="Contact" data-es="Contacto" data-fr="Contact"></a></li>
+                <li><a href="../resources.html" data-en="Resources" data-es="Recursos" data-fr="Ressources"></a></li>
                 <li class="language-selector">
                     <select id="language" onchange="changeLanguage(this.value)">
                         <option value="en">EN</option>
@@ -64,61 +64,200 @@
     <div class="page">
         <div class="breadcrumb">
             <a href="../products.html" data-en="Products" data-es="Productos" data-fr="Produits"></a> &nbsp;/&nbsp;
-            <a href="../products.html" data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></a> &nbsp;/&nbsp;
+            <a href="../products.html#door-hardware" data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></a> &nbsp;/&nbsp;
             <span data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></span>
         </div>
-
         <div class="page-head">
             <span class="eyebrow" data-en="Door Hardware" data-es="Herrajes para Puertas" data-fr="Quincaillerie de Porte"></span>
             <h1 data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></h1>
-            <p data-en="Keypad, fingerprint, and face-recognition smart locks engineered for reliable, modern access control." data-es="Cerraduras inteligentes con teclado, huella digital y reconocimiento facial, diseñadas para un control de acceso moderno y confiable." data-fr="Serrures connectées à clavier, empreinte digitale et reconnaissance faciale, conçues pour un contrôle d'accès moderne et fiable."></p>
+            <p data-en="Keypad, fingerprint, palm, and face-recognition smart locks — deadbolts, levers, knobs, and handlesets engineered for reliable, modern access control." data-es="Cerraduras inteligentes con teclado, huella, palma y reconocimiento facial — cerrojos, manijas, perillas y juegos de manija para un control de acceso moderno y confiable." data-fr="Serrures connectées à clavier, empreinte, paume et reconnaissance faciale — pênes, béquilles, boutons et poignées pour un contrôle d'accès moderne et fiable."></p>
+            <a class="btn btn-download" style="margin-top:1.6rem;" href="../downloads/FIXORA-Smart-Lock-Catalogue.pdf" download data-en="Download Catalog" data-es="Descargar Catálogo" data-fr="Télécharger le Catalogue"></a>
         </div>
-
         <div class="product-list">
-            <a class="product-card" href="smart-lock-9901.html">
-                <div class="media"><img src="../images/products/smart-lock-9901.jpg" alt="FX-9901 Smart Lock" loading="lazy"></div>
+            <a class="product-card" href="sl-DLEY9903.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLEY9903_1.png" alt="DLEY9903" loading="lazy"></div>
                 <div class="body">
-                    <span class="model">FX-9901</span>
-                    <h3 data-en="Keypad Handle Smart Lock" data-es="Cerradura Inteligente con Teclado y Manija" data-fr="Serrure Connectée à Clavier et Poignée"></h3>
-                    <p data-en="Keypad and key entry with a full-length matte-black grip handle." data-es="Acceso con teclado y llave, con manija de agarre completa en negro mate." data-fr="Accès par clavier et clé, avec poignée pleine longueur en noir mat."></p>
+                    <span class="model">DLEY9903</span>
+                    <h3>Smart Video Door Lock with WIFI</h3>
+                    <p>Facial Recognition, Palm Print, Fingerprint, Passcode</p>
                     <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
                 </div>
             </a>
-
-            <a class="product-card" href="smart-lock-9902.html">
-                <div class="media"><img src="../images/products/smart-lock-9902.jpg" alt="FX-9902 Smart Lock" loading="lazy"></div>
+            <a class="product-card" href="sl-DLET9901.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLET9901_1.png" alt="DLET9901" loading="lazy"></div>
                 <div class="body">
-                    <span class="model">FX-9902</span>
-                    <h3 data-en="Keypad Smart Entry Lock" data-es="Cerradura Inteligente de Entrada con Teclado" data-fr="Serrure Connectée d'Entrée à Clavier"></h3>
-                    <p data-en="PIN code and key access with a sleek pull handle for modern entries." data-es="Acceso con código PIN y llave, con manija elegante para entradas modernas." data-fr="Accès par code PIN et clé, avec poignée élégante pour les entrées modernes."></p>
+                    <span class="model">DLET9901</span>
+                    <h3>Bluetooth Keyless Electronic Entry Handleset</h3>
+                    <p>Passcode, App, Mechanical Key</p>
                     <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
                 </div>
             </a>
-
-            <a class="product-card" href="smart-lock-9903.html">
-                <div class="media"><img src="../images/products/smart-lock-9903.jpg" alt="FX-9903 Smart Lock" loading="lazy"></div>
+            <a class="product-card" href="sl-DLET9902.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLET9902_1.png" alt="DLET9902" loading="lazy"></div>
                 <div class="body">
-                    <span class="model">FX-9903</span>
-                    <h3 data-en="Face Recognition Smart Lock" data-es="Cerradura Inteligente con Reconocimiento Facial" data-fr="Serrure Connectée à Reconnaissance Faciale"></h3>
-                    <p data-en="Face recognition, fingerprint, and PIN access with a built-in camera." data-es="Reconocimiento facial, huella digital y acceso por PIN con cámara integrada." data-fr="Reconnaissance faciale, empreinte digitale et accès par PIN avec caméra intégrée."></p>
+                    <span class="model">DLET9902</span>
+                    <h3>Bluetooth Keyless Electronic Entry Handleset</h3>
+                    <p>Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLET903.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLET903_1.png" alt="DLET903" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLET903</span>
+                    <h3>Bluetooth Keyless Smart Door Knob</h3>
+                    <p>Fingerprint, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLEY905.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLEY905_1.png" alt="DLEY905" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLEY905</span>
+                    <h3>Bluetooth Keyless Smart Door Knob with Keypad</h3>
+                    <p>Fingerprint, Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLET803.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLET803_1.png" alt="DLET803" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLET803</span>
+                    <h3>Bluetooth Keyless Smart Door Lever</h3>
+                    <p>Fingerprint, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLEY805.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLEY805_1.png" alt="DLEY805" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLEY805</span>
+                    <h3>Bluetooth Keyless Smart Door Lever with Keypad</h3>
+                    <p>Fingerprint, Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLET601.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLET601_1.png" alt="DLET601" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLET601</span>
+                    <h3>Bluetooth Keyless Electronic Deadbolt with Keypad</h3>
+                    <p>Fingerprint, Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLET602.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLET602_1.png" alt="DLET602" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLET602</span>
+                    <h3>Bluetooth Keyless Electronic Deadbolt with Keypad</h3>
+                    <p>Fingerprint, Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLET651.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLET651_1.png" alt="DLET651" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLET651</span>
+                    <h3>Bluetooth Keyless Electronic Deadbolt with Keypad</h3>
+                    <p>Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLE652.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLE652_1.png" alt="DLE652" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLE652</span>
+                    <h3>Bluetooth Keyless Electronic Deadbolt with Keypad</h3>
+                    <p>Fingerprint, Passcode, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLE653.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLE653_1.png" alt="DLE653" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLE653</span>
+                    <h3>Bluetooth Keyless Electronic Deadbolt with Keypad</h3>
+                    <p>Fingerprint, Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLE906.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLE906_1.png" alt="DLE906" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLE906</span>
+                    <h3>Bluetooth Keyless Smart Door Knob with Keypad</h3>
+                    <p>Fingerprint, Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLE806.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLE806_1.png" alt="DLE806" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLE806</span>
+                    <h3>Bluetooth Keyless Smart Door Lever with Keypad</h3>
+                    <p>Fingerprint, Passcode, App, Mechanical Key</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLE801.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLE801_1.png" alt="DLE801" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLE801</span>
+                    <h3>Bluetooth Keyless Smart Door Lever with Keypad</h3>
+                    <p>Fingerprint, Passcode, Card, App</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLE203.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLE203_1.png" alt="DLE203" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLE203</span>
+                    <h3>Smart Door Lever with Keypad</h3>
+                    <p>Fingerprint, Passcode, Card, App</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLEY202.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLEY202_1.png" alt="DLEY202" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLEY202</span>
+                    <h3>Keyless Smart Entry Door Lock with WIFI</h3>
+                    <p>Fingerprint, Passcode, Card, App</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLEY141.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLEY141_1.png" alt="DLEY141" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLEY141</span>
+                    <h3>Smart Video Door Lock with WIFI</h3>
+                    <p>Facial Recognition, Palm Print, Fingerprint, Passcode</p>
+                    <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
+                </div>
+            </a>
+            <a class="product-card" href="sl-DLEY143.html">
+                <div class="media"><img src="../images/products/Smart_Locks/DLEY143_1.png" alt="DLEY143" loading="lazy"></div>
+                <div class="body">
+                    <span class="model">DLEY143</span>
+                    <h3>Smart Video Door Lock with WIFI</h3>
+                    <p>Facial Recognition, Palm Print, Fingerprint, Passcode</p>
                     <span class="view" data-en="View Details →" data-es="Ver Detalles →" data-fr="Voir les Détails →"></span>
                 </div>
             </a>
         </div>
     </div>
-
     <footer class="footer">
         <div class="page">
             <a href="../index.html"><img class="footer-logo" src="../images/fixora-logo-white.png" alt="FIXORA"></a>
             <div class="footer-links">
-                <a href="../products.html" data-en="Products" data-es="Productos" data-fr="Produits"></a>
+                <a href="smart-locks.html" data-en="Smart Locks" data-es="Cerraduras Inteligentes" data-fr="Serrures Connectées"></a>
                 <a href="../partner.html" data-en="Partner" data-es="Asóciese" data-fr="Partenariat"></a>
                 <a href="mailto:mike@probuildercorp.com">mike@probuildercorp.com</a>
             </div>
         </div>
         <div class="footer-bottom">&copy; 2024 FIXORA. <span data-en="All rights reserved." data-es="Todos los derechos reservados." data-fr="Tous droits réservés."></span></div>
     </footer>
-
-    <script src="store.js"></script>
+<script src="store.js"></script>
 </body>
 </html>
