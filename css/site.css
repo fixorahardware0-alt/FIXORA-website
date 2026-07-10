@@ -5,8 +5,8 @@
     --primary-orange: #FF6B35;
     --dark-gray: #1a1a1a;
     --light-gray: #f5f5f5;
-    --warm-bg: #fafafa;
-    --warm-panel: #faf9f7;
+    --warm-bg: #FFF9EF;
+    --warm-panel: #FFF7E6;
     --border-color: #e0ddd8;
     --text-dark: #1a1a1a;
     --text-light: #666666;
@@ -72,6 +72,13 @@ section { padding: 5.5rem 0; }
 .mega-list { list-style: none; }
 .mega-list li a { display: block; padding: 0.5rem 0; color: var(--text-light); font-size: 0.95rem; font-weight: 500; }
 .mega-list li a:hover { color: var(--primary-orange); padding-left: 6px; }
+.mega-list .has-sub { position: relative; }
+.mega-list .has-sub > a::after { content: '\25B8'; position: static; background: none; width: auto; height: auto; margin-left: 0.45rem; font-size: 0.72rem; color: var(--text-light); vertical-align: middle; transition: color 0.2s ease; }
+.mega-list .has-sub:hover > a::after { color: var(--primary-orange); }
+.mega-sub { list-style: none; position: absolute; left: 100%; top: -0.6rem; min-width: 210px; background: #fff; border: 1px solid var(--border-color); border-radius: 6px; box-shadow: 0 16px 36px rgba(0,0,0,0.14); padding: 0.5rem 0.4rem; opacity: 0; visibility: hidden; transform: translateX(-8px); transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s; z-index: 30; }
+.mega-list .has-sub:hover > .mega-sub { opacity: 1; visibility: visible; transform: translateX(0); }
+.mega-sub li a { display: block; padding: 0.4rem 0.85rem; font-size: 0.88rem; color: var(--text-light); font-weight: 500; white-space: nowrap; border-radius: 4px; }
+.mega-sub li a:hover { color: var(--primary-orange); background: var(--warm-bg); padding-left: 0.85rem; }
 .product-group { scroll-margin-top: 100px; }
 
 /* ---------- Buttons ---------- */
@@ -336,6 +343,8 @@ section { padding: 5.5rem 0; }
     .mega-col + .mega-col { margin-top: 1rem; }
     .mega-cat { font-size: 1rem; border-bottom: none; padding-bottom: 0.3rem; margin-bottom: 0.2rem; }
     .mega-list li a { padding: 0.45rem 0 0.45rem 0.8rem; font-size: 0.9rem; }
+    .mega-sub { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; min-width: 0; padding: 0 0 0 0.8rem; }
+    .mega-list .has-sub > a::after { content: none; }
     .split, .split.reverse .split-visual { grid-template-columns: 1fr; }
     .split { grid-template-columns: 1fr; gap: 2.5rem; }
     .split.reverse .split-visual { order: 0; }

@@ -59,6 +59,8 @@ button { font-family: inherit; cursor: pointer; border: none; }
 
 .detail-info .model { display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--primary-orange); margin-bottom: 0.8rem; }
 .detail-info h1 { font-family: 'Marcellus', serif; font-size: 2.6rem; font-weight: 400; line-height: 1.15; margin-bottom: 1.3rem; }
+.detail-info h1.sku-name { font-size: 3.4rem; letter-spacing: 1px; }
+.product-card h3.sku-name { font-size: 1.55rem; letter-spacing: 0.5px; }
 .detail-info .lead { font-size: 1.05rem; color: var(--text-light); line-height: 1.85; margin-bottom: 2rem; }
 .detail-info h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 1.2rem; padding-bottom: 0.8rem; border-bottom: 1px solid var(--border-color); }
 .spec-list { list-style: none; margin-bottom: 2.5rem; }
@@ -115,9 +117,18 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .mega-list { list-style: none; }
 .mega-list li a { display: block; padding: 0.5rem 0; color: var(--text-light); font-size: 0.95rem; font-weight: 500; }
 .mega-list li a:hover { color: var(--primary-orange); padding-left: 6px; }
+.mega-list .has-sub { position: relative; }
+.mega-list .has-sub > a::after { content: '\25B8'; position: static; background: none; width: auto; height: auto; margin-left: 0.45rem; font-size: 0.72rem; color: var(--text-light); vertical-align: middle; transition: color 0.2s ease; }
+.mega-list .has-sub:hover > a::after { color: var(--primary-orange); }
+.mega-sub { list-style: none; position: absolute; left: 100%; top: -0.6rem; min-width: 210px; background: #fff; border: 1px solid var(--border-color); border-radius: 6px; box-shadow: 0 16px 36px rgba(0,0,0,0.14); padding: 0.5rem 0.4rem; opacity: 0; visibility: hidden; transform: translateX(-8px); transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s; z-index: 30; }
+.mega-list .has-sub:hover > .mega-sub { opacity: 1; visibility: visible; transform: translateX(0); }
+.mega-sub li a { display: block; padding: 0.4rem 0.85rem; font-size: 0.88rem; color: var(--text-light); font-weight: 500; white-space: nowrap; border-radius: 4px; }
+.mega-sub li a:hover { color: var(--primary-orange); background: var(--warm-bg); padding-left: 0.85rem; }
 
 @media (max-width: 900px) {
     .nav-menu.active { max-height: 1100px; }
+    .mega-sub { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: none; min-width: 0; padding: 0 0 0 0.8rem; }
+    .mega-list .has-sub > a::after { content: none; }
     .nav-item.has-mega { position: relative; }
     .mega-menu { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border-top: none; background: transparent; }
     .mega-inner { display: block; max-width: none; padding: 0.6rem 0 0; }
@@ -140,6 +151,12 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .dh .finishes { display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:2rem; }
 .dh .finish-chip { font-size:0.72rem; letter-spacing:0.3px; border:1px solid var(--border-color); border-radius:20px; padding:0.35rem 0.85rem; color:var(--text-light); }
 .dh .detail-info h2 { margin-top:0.5rem; }
+.dh .feature-list { list-style:none; margin-bottom:2.2rem; }
+.dh .feature-list li { padding:0.5rem 0 0.5rem 1.6rem; position:relative; color:var(--text-light); font-size:0.9rem; border-bottom:1px solid var(--border-color); }
+.dh .feature-list li::before { content:'\2713'; position:absolute; left:0; color:var(--primary-orange); font-weight:700; }
+.dh .variant-table { width:100%; border-collapse:collapse; margin-bottom:2.2rem; font-size:0.85rem; }
+.dh .variant-table th { text-align:left; font-weight:600; color:var(--text-dark); border-bottom:2px solid var(--border-color); padding:0.6rem 0.9rem 0.6rem 0; white-space:nowrap; }
+.dh .variant-table td { color:var(--text-light); border-bottom:1px solid var(--border-color); padding:0.6rem 0.9rem 0.6rem 0; }
 
 /* smart-lock download btn */
 .btn-row { display:flex; flex-direction:column; gap:1rem; align-items:stretch; max-width:420px; }
