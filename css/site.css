@@ -175,6 +175,17 @@ section { padding: 5.5rem 0; }
 .resource-card p { color: var(--text-light); line-height: 1.75; font-size: 0.97rem; margin-bottom: 2rem; flex-grow: 1; }
 .resource-card .btn { align-self: center; }
 @media (max-width: 900px) { .resource-grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
+.catalog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 880px; margin: 0 auto; }
+@media (max-width: 760px) { .catalog-grid { grid-template-columns: 1fr; max-width: 460px; } }
+.catalog-card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: all 0.3s ease; }
+.catalog-card:hover { box-shadow: 0 18px 42px rgba(0,0,0,0.1); transform: translateY(-6px); }
+.catalog-media { height: 250px; overflow: hidden; background: var(--warm-bg); }
+.catalog-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.catalog-card:hover .catalog-media img { transform: scale(1.05); }
+.catalog-body { display: flex; flex-direction: column; flex-grow: 1; text-align: center; padding: 2.2rem 2rem 2.4rem; }
+.catalog-body h3 { font-family: 'Marcellus', serif; font-size: 1.4rem; font-weight: 400; margin-bottom: 0.9rem; color: var(--text-dark); line-height: 1.3; }
+.catalog-body p { color: var(--text-light); line-height: 1.75; font-size: 0.95rem; margin-bottom: 1.8rem; flex-grow: 1; }
+.catalog-body .btn { align-self: center; }
 
 /* FAQ accordion */
 .faq-group { max-width: 860px; margin: 0 auto; }
