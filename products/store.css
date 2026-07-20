@@ -69,14 +69,19 @@ button { font-family: inherit; cursor: pointer; border: none; }
 .btn { display: inline-block; padding: 1rem 2.2rem; background: var(--primary-orange); color: #fff; font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; border-radius: 2px; transition: all 0.3s ease; }
 .btn:hover { background: #ff5722; transform: translateY(-3px); box-shadow: 0 12px 30px rgba(255,107,53,0.3); }
 
-/* Footer */
-.footer { background: #1a1a1a; color: rgba(255,255,255,0.8); padding: 3rem 0 1.5rem; margin-top: 2rem; }
-.footer .page { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem; padding-top: 0; padding-bottom: 1.5rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.footer-logo { height: 26px; width: auto; }
-.footer-links { display: flex; gap: 1.8rem; flex-wrap: wrap; }
-.footer-links a { font-size: 0.85rem; color: rgba(255,255,255,0.8); }
-.footer-links a:hover { color: var(--primary-orange); }
-.footer-bottom { text-align: center; color: rgba(255,255,255,0.55); font-size: 0.82rem; padding-top: 1.2rem; }
+/* Footer — matches homepage (site.css) */
+.section-container { max-width: 1300px; margin: 0 auto; padding: 0 2rem; }
+.footer { background: #1a1a1a; color: rgba(255,255,255,0.9); padding: 3rem 0 1rem; margin-top: 2rem; }
+.footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 3rem; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.footer-logo { height: 26px; width: auto; display: block; margin-bottom: 1.2rem; }
+.footer-tagline { font-family: 'Marcellus', serif; font-size: 1.15rem; color: #fff; letter-spacing: 0.5px; }
+.footer-section h4 { font-family: 'Marcellus', serif; font-size: 1.1rem; margin-bottom: 1rem; color: var(--primary-orange); font-weight: 400; letter-spacing: 0.5px; }
+.footer-section p { color: rgba(255,255,255,0.8); margin-bottom: 0.5rem; line-height: 1.6; font-size: 0.9rem; }
+.footer-section ul { list-style: none; }
+.footer-section ul li { margin-bottom: 0.6rem; }
+.footer-section a { color: rgba(255,255,255,0.8); font-size: 0.9rem; }
+.footer-section a:hover { color: var(--primary-orange); }
+.footer-bottom { text-align: center; color: rgba(255,255,255,0.6); font-size: 0.85rem; padding: 1rem 0; }
 
 @media (max-width: 900px) {
     .menu-toggle { display: block; }
