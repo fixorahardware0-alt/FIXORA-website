@@ -1,0 +1,2328 @@
+{
+ "subcats": [
+  {
+   "slug": "drawer-slide",
+   "name": "Drawer Slide",
+   "es": "Correderas de Cajón",
+   "fr": "Coulisses de Tiroir",
+   "desc": "Ball-bearing and concealed undermount slides in full-extension, soft-close, and push-to-open configurations.",
+   "desc_es": "Correderas de rodamientos y de montaje inferior oculto en configuraciones de extensión total, cierre suave y apertura por presión.",
+   "desc_fr": "Coulisses à billes et sous-montées invisibles en versions extension totale, fermeture douce et ouverture par pression.",
+   "products": [
+    {
+     "sku": "DS4512B",
+     "name": "Standard Ball-Bearing Slide, Full Extension",
+     "specs": [
+      [
+       "Width",
+       "45mm"
+      ],
+      [
+       "Material",
+       "Cold - rolled steel 1.0x1.0x1.2mm"
+      ],
+      [
+       "Length",
+       "250-600mm(10\"-24\")"
+      ],
+      [
+       "Thickness",
+       "12.7±0.2mm"
+      ],
+      [
+       "Maximum load",
+       "66 lbs (30kg)"
+      ],
+      [
+       "The installed forms",
+       "Drawer side"
+      ],
+      [
+       "Surface treatment",
+       "Galvanized or Electrophoresis black"
+      ]
+     ]
+    },
+    {
+     "sku": "DS4514B",
+     "name": "Standard Ball-Bearing Slide, Full Extension",
+     "specs": [
+      [
+       "Width",
+       "45mm"
+      ],
+      [
+       "Material",
+       "Cold - rolled steel 1.1x1.2x1.4mm"
+      ],
+      [
+       "Length",
+       "250-600mm(10\"-24\")"
+      ],
+      [
+       "Thickness",
+       "12.7±0.2mm"
+      ],
+      [
+       "Maximum load",
+       "100 lbs (45kg)"
+      ],
+      [
+       "The installed forms",
+       "Drawer side"
+      ],
+      [
+       "Surface treatment",
+       "Galvanized or Electrophoresis black"
+      ]
+     ]
+    },
+    {
+     "sku": "DS4512A",
+     "name": "Soft-Close Ball-Bearing Slide, Full Extension",
+     "specs": [
+      [
+       "Width",
+       "45mm"
+      ],
+      [
+       "Material",
+       "Cold - rolled steel 1.0x1.0x1.2mm"
+      ],
+      [
+       "Length",
+       "300-600mm(12\"-24\")"
+      ],
+      [
+       "Thickness",
+       "12.7±0.2mm"
+      ],
+      [
+       "Maximum load",
+       "66 lbs (30kg)"
+      ],
+      [
+       "The installed forms",
+       "Drawer side"
+      ],
+      [
+       "Surface treatment",
+       "Galvanized or Electrophoresis black"
+      ]
+     ]
+    },
+    {
+     "sku": "DS4514A",
+     "name": "Soft-Close Ball-Bearing Slide, Full Extension",
+     "specs": [
+      [
+       "Width",
+       "45mm"
+      ],
+      [
+       "Material",
+       "Cold - rolled steel 1.1x1.2x1.4mm"
+      ],
+      [
+       "Length",
+       "300-600mm(12\"-24\")"
+      ],
+      [
+       "Thickness",
+       "12.7±0.2mm"
+      ],
+      [
+       "Maximum load",
+       "100 lbs (45kg)"
+      ],
+      [
+       "The installed forms",
+       "Drawer side"
+      ],
+      [
+       "Surface treatment",
+       "Galvanized or Electrophoresis black"
+      ]
+     ]
+    },
+    {
+     "sku": "DS4512C",
+     "name": "Push-to-Open Ball-Bearing Slide, Full Extension",
+     "specs": [
+      [
+       "Width",
+       "45mm"
+      ],
+      [
+       "Material",
+       "Cold - rolled steel 1.0x1.0x1.2mm"
+      ],
+      [
+       "Length",
+       "300-600mm(12\"-24\")"
+      ],
+      [
+       "Thickness",
+       "12.7±0.2mm"
+      ],
+      [
+       "Maximum load",
+       "66 lbs (30kg)"
+      ],
+      [
+       "The installed forms",
+       "Drawer side"
+      ],
+      [
+       "Surface treatment",
+       "Galvanized or Electrophoresis black"
+      ]
+     ]
+    },
+    {
+     "sku": "DS4514C",
+     "name": "Push-to-Open Ball-Bearing Slide, Full Extension",
+     "specs": [
+      [
+       "Width",
+       "45mm"
+      ],
+      [
+       "Material",
+       "Cold - rolled steel 1.1x1.2x1.4mm"
+      ],
+      [
+       "Length",
+       "300-600mm(12\"-24\")"
+      ],
+      [
+       "Thickness",
+       "12.7±0.2mm"
+      ],
+      [
+       "Maximum load",
+       "100 lbs (45kg)"
+      ],
+      [
+       "The installed forms",
+       "Drawer side"
+      ],
+      [
+       "Surface treatment",
+       "Galvanized or Electrophoresis black"
+      ]
+     ]
+    },
+    {
+     "sku": "DSE381A",
+     "name": "Concealed Undermount Slide, Full Extension",
+     "specs": [
+      [
+       "Applicable drawer side panel thickness",
+       "10mm-16mm"
+      ],
+      [
+       "Maximum load",
+       "35kg"
+      ],
+      [
+       "Installation form",
+       "Bottom of the drawer"
+      ],
+      [
+       "Material",
+       "Galvanized steel"
+      ],
+      [
+       "Length",
+       "300-550mm(12\"-22\")"
+      ],
+      [
+       "Material thickness (upper/middle/lower rail)",
+       "1.2x1.5x1.8mm"
+      ]
+     ]
+    },
+    {
+     "sku": "DSA382A",
+     "name": "Concealed Undermount Slide, Full Extension",
+     "specs": [
+      [
+       "Applicable drawer side panel thickness",
+       "10mm-16mm"
+      ],
+      [
+       "Maximum load",
+       "35kg"
+      ],
+      [
+       "Installation form",
+       "Bottom of the drawer"
+      ],
+      [
+       "Material",
+       "Galvanized steel"
+      ],
+      [
+       "Length",
+       "18\"  21\""
+      ],
+      [
+       "Material thickness (upper/middle/lower rail)",
+       "1.0x1.4x1.8mm"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "cabinet-hinge",
+   "name": "Cabinet Hinge",
+   "es": "Bisagras de Gabinete",
+   "fr": "Charnières de Meuble",
+   "desc": "Clip-on concealed hinges and compact face-frame hinges with integrated soft-close and 3-dimensional adjustment.",
+   "desc_es": "Bisagras ocultas de clip y bisagras compactas para marco frontal con cierre suave integrado y ajuste tridimensional.",
+   "desc_fr": "Charnières invisibles à clipser et charnières compactes pour cadre frontal, à fermeture douce intégrée et réglage tridimensionnel.",
+   "products": [
+    {
+     "sku": "CH9021B",
+     "name": "Concealed Hinge",
+     "bullets_title": "TECHNICAL SPECIFICATION",
+     "bullets": [
+      "Standard economical hinge without soft closing",
+      "Clip on without cam adjust",
+      "105° opening angle for Door thickness of 14-22mm",
+      "Metal material,Cu-Nickel",
+      "Integrated silent system",
+      "Easy clip on and tool-free door to cabinet assembly and removal",
+      "3-dimensional adjustment with relevant cam plate"
+     ]
+    },
+    {
+     "sku": "CH9021A",
+     "name": "Soft-Close Concealed Hinge",
+     "bullets_title": "TECHNICAL SPECIFICATION",
+     "bullets": [
+      "Standard economical soft close hinge",
+      "Clip on without cam adjust",
+      "105° opening angle for Door thickness of 14-22mm",
+      "Metal material,Cu-Nickel",
+      "Integrated silent system",
+      "Easy clip on and tool-free door to cabinet assembly and removal",
+      "3-dimensional adjustment with relevant cam plate"
+     ]
+    },
+    {
+     "sku": "CH9031A",
+     "name": "Soft-Close Concealed Hinge",
+     "bullets_title": "TECHNICAL SPECIFICATION",
+     "bullets": [
+      "Standard soft close hinge",
+      "Clip on with cam adjust",
+      "105° opening angle for Door thickness of 14-26mm",
+      "Metal material, Cu-Nickel /Cu-black nickel plated",
+      "Integrated silent system",
+      "Easy clip on and tool-free door to cabinet assembly and removal 3-dimensional adjustment (with cam plate)",
+      "Push open function for option"
+     ]
+    },
+    {
+     "sku": "CH701A",
+     "name": "Soft-Close American Hinge",
+     "bullets_title": "TECHNICAL SPECIFICATION",
+     "bullets": [
+      "Compact soft close hinge for face frame cabinets",
+      "105° opening angle for Door thickness of 14-26mm",
+      "For face frame cabinet frame thickness 3/4\" (19mm)",
+      "Metal material, Cu-nickel plated",
+      "Multi-type of overlay to application on different cabinets",
+      "Integrated silent system(With deactivation option)",
+      "3-dimensional front adjustment"
+     ],
+     "specs": [
+      [
+       "Overlay Options",
+       "1/2\", 3/4\""
+      ]
+     ]
+    },
+    {
+     "sku": "CH702A",
+     "name": "Soft-Close American Hinge",
+     "bullets_title": "TECHNICAL SPECIFICATION",
+     "bullets": [
+      "Compact soft close hinge for face frame cabinets",
+      "105° opening angle for Door thickness of 14-22mm",
+      "For face frame cabinet frame thickness 3/4\" (19mm)",
+      "Metal material, Cu-nickel plated",
+      "Multi-type of overlay to application on different cabinets",
+      "Integrated silent system(With deactivation option)",
+      "3-dimensional front adjustment"
+     ],
+     "specs": [
+      [
+       "Overlay Options",
+       "1-1/2\", 1-1/4\" ,1-5/16\" ,1\""
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "cabinet-handle",
+   "name": "Cabinet Handle",
+   "es": "Tiradores de Gabinete",
+   "fr": "Poignées de Meuble",
+   "desc": "Cabinet knobs and pulls in zinc alloy, aluminum, acrylic, and stainless steel across a wide range of finishes and hole distances.",
+   "desc_es": "Perillas y tiradores de gabinete en aleación de zinc, aluminio, acrílico y acero inoxidable, con amplia gama de acabados y distancias entre centros.",
+   "desc_fr": "Boutons et poignées de meuble en zinc, aluminium, acrylique et acier inoxydable, dans une large gamme de finitions et d'entraxes.",
+   "products": [
+    {
+     "sku": "PSQB206Z",
+     "name": "Zinc Alloy Cabinet Knob",
+     "specs": [
+      [
+       "High",
+       "32mm"
+      ],
+      [
+       "Diameter",
+       "25mm"
+      ],
+      [
+       "Finish Options",
+       "CB/GD/NB"
+      ]
+     ]
+    },
+    {
+     "sku": "PS81136",
+     "name": "Zinc Alloy Cabinet Knob",
+     "specs": [
+      [
+       "High",
+       "33.5mm"
+      ],
+      [
+       "Diameter",
+       "29.5mm"
+      ],
+      [
+       "Finish Options",
+       "CB/ORB/BK/SN/NB"
+      ]
+     ]
+    },
+    {
+     "sku": "PSR03",
+     "name": "Zinc Alloy Cabinet Knob",
+     "specs": [
+      [
+       "High",
+       "29mm"
+      ],
+      [
+       "Diameter",
+       "22mm"
+      ],
+      [
+       "Finish Options",
+       "BK/SN/GD/NB/CB"
+      ]
+     ]
+    },
+    {
+     "sku": "PS3910",
+     "name": "Zinc Alloy Cabinet Knob",
+     "specs": [
+      [
+       "High",
+       "28.5mm"
+      ],
+      [
+       "Diameter",
+       "29.5mm"
+      ],
+      [
+       "Finish Options",
+       "BK/SF/SN/CB/NB/GD/PC/BB/CP"
+      ]
+     ]
+    },
+    {
+     "sku": "PSR82982",
+     "name": "Zinc Alloy Cabinet Knob",
+     "specs": [
+      [
+       "High",
+       "29.5mm"
+      ],
+      [
+       "Diameter",
+       "26.5mm"
+      ],
+      [
+       "Finish Options",
+       "NB/GD/BK/CB"
+      ]
+     ]
+    },
+    {
+     "sku": "PS92002",
+     "name": "Zinc Alloy Cabinet Knob",
+     "specs": [
+      [
+       "High",
+       "22.5mm"
+      ],
+      [
+       "Total length",
+       "38.5mm"
+      ],
+      [
+       "Width",
+       "15.3mm"
+      ],
+      [
+       "Finish Options",
+       "BK/GD/SN/PC/CB/NB"
+      ]
+     ]
+    },
+    {
+     "sku": "PD92002",
+     "name": "Zinc Alloy Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "28.5mm"
+      ],
+      [
+       "Total length",
+       "102/122/154/186/218mm"
+      ],
+      [
+       "Width",
+       "13mm"
+      ],
+      [
+       "Hole distance",
+       "76/96/128/160/192mm"
+      ],
+      [
+       "Finish Options",
+       "BK/GD/SN/PC/CB/NB"
+      ]
+     ]
+    },
+    {
+     "sku": "PD840",
+     "name": "Zinc Alloy Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "21.5mm"
+      ],
+      [
+       "Total length",
+       "121/139mm"
+      ],
+      [
+       "Width",
+       "11.5mm"
+      ],
+      [
+       "Hole distance(mm)",
+       "76/96mm"
+      ],
+      [
+       "Finish Options",
+       "SN/ORB/BK/BB"
+      ]
+     ]
+    },
+    {
+     "sku": "PDJS09",
+     "name": "Zinc Alloy Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "28mm"
+      ],
+      [
+       "Total length",
+       "104/136/168/200mm"
+      ],
+      [
+       "Width",
+       "9mm"
+      ],
+      [
+       "Hole distance",
+       "96/128/160/192mm"
+      ],
+      [
+       "Finish Options",
+       "CB/PC/NB/SN/BK"
+      ]
+     ]
+    },
+    {
+     "sku": "PDN03",
+     "name": "Zinc Alloy Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "31mm"
+      ],
+      [
+       "Total length",
+       "98/118/150mm"
+      ],
+      [
+       "Width",
+       "22mm"
+      ],
+      [
+       "Hole distance(mm)",
+       "76/96/128mm"
+      ],
+      [
+       "Finish Options",
+       "BK/SN"
+      ]
+     ]
+    },
+    {
+     "sku": "PD82982",
+     "name": "Zinc Alloy Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "34.5mm"
+      ],
+      [
+       "Total length",
+       "92mm"
+      ],
+      [
+       "Width",
+       "23.5mm"
+      ],
+      [
+       "Hole distance(mm)",
+       "76mm"
+      ],
+      [
+       "Finish Options",
+       "NB/GD/BK/CB"
+      ]
+     ]
+    },
+    {
+     "sku": "PDC15",
+     "name": "Zinc Alloy Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "28mm"
+      ],
+      [
+       "Total length",
+       "111/131/137/163mm"
+      ],
+      [
+       "Width",
+       "12.5mm"
+      ],
+      [
+       "Hole distance(mm)",
+       "76/96/102/128mm"
+      ],
+      [
+       "Finish Options",
+       "SN/ORB/GD/BK"
+      ]
+     ]
+    },
+    {
+     "sku": "PDN1702",
+     "name": "Zinc Alloy Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "28mm"
+      ],
+      [
+       "Total length",
+       "85.5/137.5/201.5mm"
+      ],
+      [
+       "Width",
+       "9.5mm"
+      ],
+      [
+       "Hole distance",
+       "76/128/192mm"
+      ],
+      [
+       "Finish Options",
+       "NB/BK/CB"
+      ]
+     ]
+    },
+    {
+     "sku": "PDN1202",
+     "name": "Zinc Alloy Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "32mm"
+      ],
+      [
+       "Total length",
+       "143mm"
+      ],
+      [
+       "Width",
+       "12mm"
+      ],
+      [
+       "Hole distance",
+       "128mm"
+      ],
+      [
+       "Finish Options",
+       "SN/GD/BK/CB"
+      ]
+     ]
+    },
+    {
+     "sku": "PST06",
+     "name": "Aluminum Cabinet Knob",
+     "specs": [
+      [
+       "High",
+       "32mm"
+      ],
+      [
+       "Diameter",
+       "34mm"
+      ],
+      [
+       "Width",
+       "13mm"
+      ],
+      [
+       "Finish Options",
+       "BK+GD"
+      ]
+     ]
+    },
+    {
+     "sku": "PDT06",
+     "name": "Aluminum Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "33mm"
+      ],
+      [
+       "Total length",
+       "100.5/152.5mm"
+      ],
+      [
+       "Width",
+       "12mm"
+      ],
+      [
+       "Hole distance",
+       "76/128mm"
+      ],
+      [
+       "Finish Options",
+       "BK+GD"
+      ]
+     ]
+    },
+    {
+     "sku": "PDT02",
+     "name": "Aluminum Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "36mm"
+      ],
+      [
+       "Total length",
+       "99/151mm"
+      ],
+      [
+       "Width",
+       "9.5mm"
+      ],
+      [
+       "Hole distance",
+       "76/128mm"
+      ],
+      [
+       "Finish Options",
+       "GD/BK/CB"
+      ]
+     ]
+    },
+    {
+     "sku": "PD206A",
+     "name": "Aluminum Cabinet Pull",
+     "specs": [
+      [
+       "High",
+       "35mm"
+      ],
+      [
+       "Total length",
+       "122/175mm"
+      ],
+      [
+       "Width",
+       "14mm"
+      ],
+      [
+       "Hole distance",
+       "76/128mm"
+      ],
+      [
+       "Finish Options",
+       "GD/BK/CB"
+      ]
+     ]
+    },
+    {
+     "sku": "PS301/PD301",
+     "name": "Acrylic Cabinet Knob & Pull",
+     "blocks": [
+      {
+       "label": "PS301",
+       "specs": [
+        [
+         "High",
+         "38mm"
+        ],
+        [
+         "Total length",
+         "40mm"
+        ],
+        [
+         "Width",
+         "14mm"
+        ],
+        [
+         "Finish Options",
+         "SN/BK"
+        ]
+       ]
+      },
+      {
+       "label": "PD301",
+       "specs": [
+        [
+         "High",
+         "38mm"
+        ],
+        [
+         "Total length",
+         "110/122/129/135/161mm"
+        ],
+        [
+         "Width",
+         "14mm"
+        ],
+        [
+         "Hole distance",
+         "76/90/96/102/128mm"
+        ],
+        [
+         "Finish Options",
+         "SN/BK"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "sku": "PS3S05/PD3S05",
+     "name": "Acrylic Cabinet Knob & Pull",
+     "blocks": [
+      {
+       "label": "PS3S05",
+       "specs": [
+        [
+         "High",
+         "39mm"
+        ],
+        [
+         "Total length",
+         "40mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Finish Options",
+         "SN"
+        ]
+       ]
+      },
+      {
+       "label": "PD3S05",
+       "specs": [
+        [
+         "High",
+         "39mm"
+        ],
+        [
+         "Total length",
+         "110/122/129/135/161mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Hole distance",
+         "76/90/96/102/128mm"
+        ],
+        [
+         "Finish Options",
+         "SN"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "sku": "PS201H/PD201H",
+     "name": "Stainless Steel Cabinet Knob & Pull",
+     "blocks": [
+      {
+       "label": "PS201H",
+       "specs": [
+        [
+         "High",
+         "32mm"
+        ],
+        [
+         "Total length",
+         "50mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Finish Options",
+         "BK/SS/PC/GD/CB/WH"
+        ]
+       ]
+      },
+      {
+       "label": "PD201H",
+       "specs": [
+        [
+         "High",
+         "32mm"
+        ],
+        [
+         "Total length",
+         "100/150/192/224/256/288mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Hole distance",
+         "64/96/128/160/192/224mm"
+        ],
+        [
+         "Finish Options",
+         "BK/SS/PC/GD/CB/WH"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "sku": "PS205H/PD205H",
+     "name": "Stainless Steel Cabinet Knob & Pull",
+     "blocks": [
+      {
+       "label": "PS205H",
+       "specs": [
+        [
+         "High",
+         "33.5mm"
+        ],
+        [
+         "Total length",
+         "50mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Finish Options",
+         "BK/SS/BB/GC/BBBK/GCBK"
+        ]
+       ]
+      },
+      {
+       "label": "PD205H",
+       "specs": [
+        [
+         "High",
+         "33.5mm"
+        ],
+        [
+         "Total length",
+         "100/150/192/224/256/288mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Hole distance",
+         "64/96/128/160/192/224/256mm"
+        ],
+        [
+         "Finish Options",
+         "BK/SS/BB/GC/BBBK/GCBK"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "sku": "PSDJ27/PDDJ27",
+     "name": "Stainless Steel Cabinet Knob & Pull",
+     "blocks": [
+      {
+       "label": "PSDJ27",
+       "specs": [
+        [
+         "High",
+         "35mm"
+        ],
+        [
+         "Total length",
+         "50mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Finish Options",
+         "SS/BK/GD/NB/CB"
+        ]
+       ]
+      },
+      {
+       "label": "PDDJ27",
+       "specs": [
+        [
+         "High",
+         "35mm"
+        ],
+        [
+         "Total length",
+         "108/140/172/204/236/268/300/332mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Hole distance",
+         "96/128/160/192/224/256/288/320mm"
+        ],
+        [
+         "Finish Options",
+         "SS/BK/GD/NB/CB"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "sku": "PSDJ16/PDDJ16",
+     "name": "Stainless Steel Cabinet Knob & Pull",
+     "blocks": [
+      {
+       "label": "PSDJ16",
+       "specs": [
+        [
+         "High",
+         "35mm"
+        ],
+        [
+         "Total length",
+         "50mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Finish Options",
+         "BK/SS"
+        ]
+       ]
+      },
+      {
+       "label": "PDDJ16",
+       "specs": [
+        [
+         "High",
+         "35mm"
+        ],
+        [
+         "Total length",
+         "100/150/192/224/256mm"
+        ],
+        [
+         "Width",
+         "12mm"
+        ],
+        [
+         "Hole distance",
+         "64/96/128/160/192mm"
+        ],
+        [
+         "Finish Options",
+         "BK/BB"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "wire-product",
+   "name": "Wire Product",
+   "es": "Productos de Alambre",
+   "fr": "Produits Filaires",
+   "desc": "Chrome-finished iron wire pull-out baskets, corner units, and trash bins sized to standard cabinet widths.",
+   "desc_es": "Cestas extraíbles, unidades de esquina y cubos de basura en alambre de hierro cromado, dimensionados para anchos de gabinete estándar.",
+   "desc_fr": "Paniers coulissants, meubles d'angle et poubelles en fil d'acier chromé, dimensionnés pour les largeurs de caisson standard.",
+   "products": [
+    {
+     "sku": "WPA01",
+     "name": "Single-Tier Basket",
+     "specs": [
+      [
+       "Description",
+       "Single layer pull out basket"
+      ],
+      [
+       "Material",
+       "Iron wire"
+      ],
+      [
+       "Finish",
+       "Chrome"
+      ]
+     ],
+     "table": {
+      "title": "Size Chart",
+      "cols": [
+       "Product Size  D*W*H",
+       "Cabinet size",
+       "Runner"
+      ],
+      "rows": [
+       [
+        "D18”*W11”*H3.5”",
+        "W15”*D21”",
+        "16” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D18”*W14”*H3.5”",
+        "W18”*D21”",
+        "16” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D18”*W17”*H3.5”",
+        "W21”*D21”",
+        "16” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D18”*W20”*H3.5”",
+        "W24”*D21”",
+        "16” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D21”*W11”*H3.5”",
+        "W15”*D24”",
+        "18” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D21”*W14”*H3.5”",
+        "W18”*D24”",
+        "18” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D21”*W17”*H3.5”",
+        "W21”*D24”",
+        "18” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D21”*W20”*H3.5”",
+        "W24”*D24”",
+        "18” length, 45mm full extension ball bearing runner"
+       ]
+      ]
+     }
+    },
+    {
+     "sku": "WPA02",
+     "name": "Two-Tier Basket",
+     "specs": [
+      [
+       "Description",
+       "Double layers pull out basket (2 baskets can be pulled out)"
+      ],
+      [
+       "Material",
+       "Iron wire"
+      ],
+      [
+       "Finish",
+       "Chrome"
+      ]
+     ],
+     "table": {
+      "title": "Size Chart",
+      "cols": [
+       "Product Size (mm) D*W*H",
+       "Cabinet size",
+       "Runner"
+      ],
+      "rows": [
+       [
+        "D18”*W11“*H13.8/15.5”",
+        "W15”*D21”",
+        "16” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D18”*W14“*H13.8/15.5”",
+        "W18”*D21”",
+        "16” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D18”*W17“*H13.8/15.5”",
+        "W21”*D21”",
+        "16” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D18”*W20“*H13.8/15.5”",
+        "W24”*D21”",
+        "16” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D21”*W11“*H13.8/15.5”",
+        "W15”*D24”",
+        "18” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D21”*W14*H13.8/15.5”",
+        "W18”*D24”",
+        "18” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D21”*W17“*H13.8/15.5”",
+        "W21”*D24”",
+        "18” length, 45mm full extension ball bearing runner"
+       ],
+       [
+        "D21”*W20“*H13.8/15.5”",
+        "W24”*D24”",
+        "18” length, 45mm full extension ball bearing runner"
+       ]
+      ]
+     }
+    },
+    {
+     "sku": "WPB03",
+     "name": "Corner Unit",
+     "specs": [
+      [
+       "Description",
+       "270° Revolving basket"
+      ],
+      [
+       "Material",
+       "Iron wire"
+      ],
+      [
+       "Finish",
+       "Chrome"
+      ],
+      [
+       "Product Size (mm) ΦD*H",
+       "Φ610x(560-790) / Φ710x(560-790) / Φ810x(560-790)"
+      ],
+      [
+       "Cabinet size (T)",
+       "700/800/900"
+      ]
+     ]
+    },
+    {
+     "sku": "WPA04",
+     "name": "Multi-Tier Basket Unit",
+     "specs": [
+      [
+       "Description",
+       "Magic corner(L) / Magic corner(R)"
+      ],
+      [
+       "Material",
+       "Iron wire"
+      ],
+      [
+       "Finish",
+       "Chrome"
+      ],
+      [
+       "Product Size (mm) W*D*H",
+       "760x500x530"
+      ],
+      [
+       "Cabinet size (T)",
+       "800-900"
+      ]
+     ]
+    },
+    {
+     "sku": "WPC05",
+     "name": "Trash Bin",
+     "specs": [
+      [
+       "Description",
+       "Single Locked type Trash Bin"
+      ],
+      [
+       "Material",
+       "Iron wire"
+      ],
+      [
+       "Finish",
+       "Chrome"
+      ],
+      [
+       "Capacity",
+       "28L/35L"
+      ],
+      [
+       "Product Size (mm) W*D*H",
+       "260x430x550"
+      ],
+      [
+       "Cabinet size (T)",
+       "350"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sliding-door-fitting",
+   "name": "Sliding Door Fitting",
+   "es": "Herrajes para Puertas Correderas",
+   "fr": "Ferrures de Porte Coulissante",
+   "desc": "Barn door hardware plus top-hung, bottom-rolling, folding, and heavy-duty soft-close sliding systems.",
+   "desc_es": "Herrajes para puertas tipo granero además de sistemas correderos suspendidos, de rodadura inferior, plegables y de cierre suave de alta resistencia.",
+   "desc_fr": "Ferrures de porte de grange ainsi que systèmes coulissants suspendus, à roulement inférieur, pliants et à fermeture douce robuste.",
+   "products": [
+    {
+     "sku": "BDJ0120",
+     "name": "Barn Door Hardware",
+     "specs": [
+      [
+       "Specification",
+       "Wall Mounting Design"
+      ],
+      [
+       "Max.Load Capacity",
+       "120kg"
+      ],
+      [
+       "Door thickness",
+       "Adjustable from 1-3/8\" to 1-3/4\"  (35mm~45mm)"
+      ],
+      [
+       "Material",
+       "Steel"
+      ],
+      [
+       "Installation method",
+       "One door"
+      ],
+      [
+       "Color",
+       "Black"
+      ]
+     ],
+     "note": "CUSTOMIZATION-TRACK LENGTH"
+    },
+    {
+     "sku": "BDT0220",
+     "name": "Barn Door Hardware",
+     "specs": [
+      [
+       "Specification",
+       "Wall Mounting Design"
+      ],
+      [
+       "Max.Load Capacity",
+       "120kg"
+      ],
+      [
+       "Door thickness",
+       "Adjustable from 1-3/8\" to 1-3/4\"  (35mm~45mm)"
+      ],
+      [
+       "Material",
+       "Steel"
+      ],
+      [
+       "Installation method",
+       "One door"
+      ],
+      [
+       "Color",
+       "Black"
+      ]
+     ],
+     "note": "CUSTOMIZATION-TRACK LENGTH"
+    },
+    {
+     "sku": "BDA0320",
+     "name": "Barn Door Hardware",
+     "specs": [
+      [
+       "Specification",
+       "Wall Mounting Design"
+      ],
+      [
+       "Max.Load Capacity",
+       "120kg"
+      ],
+      [
+       "Door thickness",
+       "Adjustable from 1-3/8\" to 1-3/4\"  (35mm~45mm)"
+      ],
+      [
+       "Material",
+       "Steel"
+      ],
+      [
+       "Installation method",
+       "One door"
+      ],
+      [
+       "Color",
+       "Black"
+      ]
+     ],
+     "note": "CUSTOMIZATION-TRACK LENGTH"
+    },
+    {
+     "sku": "SLT1807",
+     "name": "Light-Duty Sliding Door Fitting",
+     "table": {
+      "title": "Model Comparison",
+      "cols": [
+       "Model No.",
+       "SLT1807",
+       "SLT1807-1"
+      ],
+      "rows": [
+       [
+        "Application",
+        "Wood door / Storage cabinet",
+        "Wood door / Storage cabinet"
+       ],
+       [
+        "Load-bearing system",
+        "Top-hung track",
+        "Top-hung track"
+       ],
+       [
+        "Max.Load Capacity",
+        "45kg",
+        "30kg"
+       ],
+       [
+        "Roller type",
+        "Double roller",
+        "Single roller"
+       ],
+       [
+        "Door thickness",
+        "16-21 or 21-28mm",
+        "16-21 or 21-28mm"
+       ],
+       [
+        "Soft-close",
+        "No",
+        "No"
+       ],
+       [
+        "Rail length",
+        "1m to 3m",
+        "1m to 3m"
+       ]
+      ]
+     },
+     "parts": [
+      "Upper wheel assembly1 *2",
+      "Upper wheel assembly2 *2",
+      "Stoper *1",
+      "Bottom guide *1",
+      "Screw ST4.2*16(optional) *18",
+      "Aluminum profile(optional) *1"
+     ]
+    },
+    {
+     "sku": "FD07",
+     "name": "Light-Duty Folding Door Fitting",
+     "specs": [
+      [
+       "Model No.",
+       "FD07"
+      ],
+      [
+       "Application",
+       "Folding door / Kitchen cabinet / Wardrobe"
+      ],
+      [
+       "Load-bearing system",
+       "Top-hung track"
+      ],
+      [
+       "Max.Load Capacity",
+       "15kg"
+      ],
+      [
+       "Roller type",
+       "None"
+      ],
+      [
+       "Door thickness",
+       "22-28mm"
+      ],
+      [
+       "Soft-close",
+       "No"
+      ],
+      [
+       "Rail length",
+       "1.2m"
+      ]
+     ]
+    },
+    {
+     "sku": "SLB1808",
+     "name": "Bottom-Rolling Sliding Door Fitting",
+     "specs": [
+      [
+       "Model No.",
+       "SLB1808"
+      ],
+      [
+       "Application",
+       "Wardrobe / Storage cabinet"
+      ],
+      [
+       "Load-bearing system",
+       "Bottom track"
+      ],
+      [
+       "Max.Load Capacity",
+       "30kg"
+      ],
+      [
+       "Roller type",
+       "Single roller"
+      ],
+      [
+       "Door thickness",
+       "N/A"
+      ],
+      [
+       "Soft-close",
+       "No"
+      ],
+      [
+       "Rail length",
+       "2m to 3m"
+      ]
+     ]
+    },
+    {
+     "sku": "SLB1809",
+     "name": "Soft-Close Bottom-Rolling Sliding Door Fitting",
+     "specs": [
+      [
+       "Model No.",
+       "SLB1809"
+      ],
+      [
+       "Application",
+       "Wardrobe / Storage cabinet"
+      ],
+      [
+       "Load-bearing system",
+       "Bottom track"
+      ],
+      [
+       "Max.Load Capacity",
+       "40kg"
+      ],
+      [
+       "Roller type",
+       "Single roller"
+      ],
+      [
+       "Door thickness",
+       "≤22mm"
+      ],
+      [
+       "Soft-close",
+       "Yes"
+      ],
+      [
+       "Rail length",
+       "2m to 3m"
+      ]
+     ]
+    },
+    {
+     "sku": "SLT1810",
+     "name": "Heavy-Duty Sliding Door Fitting",
+     "specs": [
+      [
+       "Model No.",
+       "SLT1810"
+      ],
+      [
+       "Application",
+       "Concealed sliding door / Partition door"
+      ],
+      [
+       "Load-bearing system",
+       "Top-hung track"
+      ],
+      [
+       "Max.Load Capacity",
+       "50kg"
+      ],
+      [
+       "Roller type",
+       "Double roller"
+      ],
+      [
+       "Door thickness",
+       "30-40mm"
+      ],
+      [
+       "Soft-close",
+       "No"
+      ],
+      [
+       "Rail length",
+       "2m to 3m"
+      ]
+     ]
+    },
+    {
+     "sku": "SLT40+SD14",
+     "name": "Heavy-Duty Soft-Close Sliding Door Fitting",
+     "specs": [
+      [
+       "Model No.",
+       "SLT40+SD14"
+      ],
+      [
+       "Application",
+       "Concealed sliding door / Partition door"
+      ],
+      [
+       "Load-bearing system",
+       "Top-hung track"
+      ],
+      [
+       "Max.Load Capacity",
+       "75kg"
+      ],
+      [
+       "Roller type",
+       "Double roller"
+      ],
+      [
+       "Door thickness",
+       "30-50mm"
+      ],
+      [
+       "Soft-close",
+       "Yes"
+      ],
+      [
+       "Rail length",
+       "2m to 3m"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sofa-leg",
+   "name": "Sofa Leg",
+   "es": "Patas de Sofá",
+   "fr": "Pieds de Canapé",
+   "desc": "Iron and aluminum alloy sofa legs in chrome, gold, black, and polished finishes across multiple heights.",
+   "desc_es": "Patas de sofá en hierro y aleación de aluminio, en acabados cromo, dorado, negro y pulido, en varias alturas.",
+   "desc_fr": "Pieds de canapé en fer et alliage d'aluminium, finitions chrome, or, noir et poli, en plusieurs hauteurs.",
+   "products": [
+    {
+     "sku": "SF838",
+     "name": "Sofa Leg - Iron",
+     "specs": [
+      [
+       "High",
+       "105/135/150mm"
+      ],
+      [
+       "Width",
+       "130mm"
+      ],
+      [
+       "Finish",
+       "PC/BK"
+      ]
+     ]
+    },
+    {
+     "sku": "SF120",
+     "name": "Sofa Leg - Aluminum Alloy",
+     "specs": [
+      [
+       "High",
+       "140mm"
+      ],
+      [
+       "Length",
+       "170mm"
+      ],
+      [
+       "Width",
+       "60mm"
+      ],
+      [
+       "Finish",
+       "BK/GD"
+      ]
+     ]
+    },
+    {
+     "sku": "SF389",
+     "name": "Sofa Leg - Iron",
+     "specs": [
+      [
+       "High",
+       "45mm"
+      ],
+      [
+       "Length",
+       "220mm"
+      ],
+      [
+       "Width",
+       "75mm"
+      ],
+      [
+       "Finish",
+       "BK/PC"
+      ]
+     ]
+    },
+    {
+     "sku": "SF124",
+     "name": "Sofa Leg - Aluminum Alloy",
+     "specs": [
+      [
+       "High",
+       "150mm"
+      ],
+      [
+       "Length",
+       "180mm"
+      ],
+      [
+       "Width",
+       "180mm"
+      ],
+      [
+       "Finish",
+       "Nature"
+      ]
+     ]
+    },
+    {
+     "sku": "SF488",
+     "name": "Sofa Leg - Iron",
+     "specs": [
+      [
+       "High",
+       "130/150/170mm"
+      ],
+      [
+       "Width",
+       "100mm"
+      ],
+      [
+       "Finish",
+       "PC/GD/BK"
+      ]
+     ]
+    },
+    {
+     "sku": "SF443",
+     "name": "Sofa Leg - Iron",
+     "specs": [
+      [
+       "High",
+       "100/120/150mm"
+      ],
+      [
+       "Diameter",
+       "40mm"
+      ],
+      [
+       "Finish",
+       "PC"
+      ]
+     ]
+    },
+    {
+     "sku": "SF916",
+     "name": "Sofa Leg - Iron",
+     "specs": [
+      [
+       "High",
+       "140mm"
+      ],
+      [
+       "Width",
+       "100mm"
+      ],
+      [
+       "Diameter",
+       "20mm"
+      ],
+      [
+       "Finish",
+       "GD/BK"
+      ]
+     ]
+    },
+    {
+     "sku": "SF701",
+     "name": "Sofa Leg - Iron",
+     "specs": [
+      [
+       "High",
+       "120/150mm"
+      ],
+      [
+       "Width",
+       "115mm"
+      ],
+      [
+       "Finish",
+       "PC"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "furniture-fitting",
+   "name": "Furniture Fitting",
+   "es": "Accesorios para Muebles",
+   "fr": "Ferrures de Meuble",
+   "desc": "Upward door supports, gas springs, wardrobe supports, adjustable feet, and cabinet hangers.",
+   "desc_es": "Soportes de puerta elevable, resortes de gas, soportes de armario, patas regulables y colgadores de gabinete.",
+   "desc_fr": "Supports de porte relevable, vérins à gaz, supports de penderie, pieds réglables et suspensions de caisson.",
+   "products": [
+    {
+     "sku": "FFC02",
+     "name": "Upward Door Support Mini Version",
+     "specs": [
+      [
+       "Material",
+       "Iron+Plastic"
+      ],
+      [
+       "Finish",
+       "Nickel Plated / Black"
+      ],
+      [
+       "Available for",
+       "Cabinet height KH: 240-500mm; Front width: 500-1500mm; Cabinet depth should be 200mm at least"
+      ]
+     ],
+     "features_title": "Features",
+     "features": [
+      "Free stop at any position in opening angle about 30°",
+      "Door can be closed when used with soft-closing hinges"
+     ],
+     "notes": [
+      "If using with 2 pcs, LF should be double.",
+      "LF=Cabinet Height KH(mm) x (Cabinet Pull weight x 2 + Front weight) FW (kg)",
+      "The open angle of the door will be limited by the angle of used hinges",
+      "KH: Cabinet Height      FW: Front Weight",
+      "If the LF is mixed in 2 areas, we advise to choose the large type."
+     ],
+     "table": {
+      "title": "Selection Table",
+      "cols": [
+       "KH-Cabinet Height",
+       "LF",
+       "Cabinet Height-KH(mm)",
+       "Front Weight-FW(KG)",
+       "Product Qty",
+       "Opening Angle",
+       "Finish"
+      ],
+      "rows": [
+       [
+        "240-400mm",
+        "520-920",
+        "KH 240 / KH 300 / KH 400",
+        "2.2-3.6kg / 1.8-2.8kg / 1.3-2.1kg",
+        "1pc",
+        "100",
+        "Nickel"
+       ],
+       [
+        "240-400mm",
+        "1040-1840",
+        "KH 240 / KH 300 / KH 400",
+        "4.4-7.2kg / 3.5-5.6kg / 2.6-4.2kg",
+        "2pcs",
+        "100",
+        "Nickel"
+       ],
+       [
+        "300-400mm",
+        "1200-1750",
+        "KH 300 / KH 400",
+        "4.0-5.6kg / 3.0-4.1kg",
+        "1pc",
+        "100",
+        "Nickel"
+       ],
+       [
+        "300-400mm",
+        "2400-3500",
+        "KH 300 / KH 400",
+        "8.0-11.2kg / 6.0-8.2kg",
+        "2pcs",
+        "100",
+        "Nickel"
+       ],
+       [
+        "400-500mm",
+        "1500-2240",
+        "KH 400 / KH 500",
+        "3.8-5.6kg / 3.0-4.3kg",
+        "1pc",
+        "100",
+        "Nickel"
+       ],
+       [
+        "400-500mm",
+        "3000-4480",
+        "KH 400 / KH 500",
+        "6.0-8.6kg / 7.5-11.2kg",
+        "2pcs",
+        "100",
+        "Nickel"
+       ],
+       [
+        "240-400mm",
+        "520-920",
+        "KH 240 / KH 300 / KH 400",
+        "2.2-3.6kg / 1.8-2.8kg / 1.3-2.1kg",
+        "1pc",
+        "100",
+        "BK"
+       ],
+       [
+        "240-400mm",
+        "1040-1840",
+        "KH 240 / KH 300 / KH 400",
+        "4.4-7.2kg / 3.5-5.6kg / 2.6-4.2kg",
+        "2pcs",
+        "100",
+        "BK"
+       ],
+       [
+        "300-400mm",
+        "1200-1750",
+        "KH 300 / KH 400",
+        "4.0-5.6kg / 3.0-4.1kg",
+        "1pc",
+        "100",
+        "BK"
+       ],
+       [
+        "300-400mm",
+        "2400-3500",
+        "KH 300 / KH 400",
+        "8.0-11.2kg / 6.0-8.2kg",
+        "2pcs",
+        "100",
+        "BK"
+       ],
+       [
+        "400-500mm",
+        "1500-2240",
+        "KH 400 / KH 500",
+        "3.8-5.6kg / 3.0-4.3kg",
+        "1pc",
+        "100",
+        "BK"
+       ],
+       [
+        "400-500mm",
+        "3000-4480",
+        "KH 400 / KH 500",
+        "6.0-8.6kg / 7.5-11.2kg",
+        "2pcs",
+        "100",
+        "BK"
+       ]
+      ]
+     }
+    },
+    {
+     "sku": "FFC03",
+     "name": "Upward Door Support Standard Version",
+     "specs": [
+      [
+       "Material",
+       "Iron + Aluminum + Plastic"
+      ],
+      [
+       "Finish",
+       "Oxidation"
+      ],
+      [
+       "Capacity",
+       "Light type: 3-4.5 kg/pc .Heavy type: 5-6.5kg/pc"
+      ],
+      [
+       "Cabinet Height",
+       "300-500mm"
+      ],
+      [
+       "Cabinet Width",
+       "≤1200mm"
+      ],
+      [
+       "Cabinet Depth",
+       ">260mm"
+      ],
+      [
+       "Thickness",
+       "16/18/22/26/28mm"
+      ],
+      [
+       "Available for",
+       "Upward-opening wooden doors and aluminum-frame doors"
+      ]
+     ],
+     "features_title": "Features",
+     "features": [
+      "Built-in damper; free-stop function when the opening angle is greater than 30°, and soft-closing function when the opening angle is 30° or less.",
+      "Easy to open",
+      "Force is adjustable",
+      "Easy assembly and adjustment",
+      "Compact structure  higher space utilization"
+     ],
+     "notes": [
+      "Free stop at any position between 30° and 90°",
+      "Soft-closing function at opening angles of 30° or less",
+      "Minimum height of cabinet is 300mm",
+      "Minimum depth of cabinet is 260mm"
+     ],
+     "table": {
+      "title": "Selection Table",
+      "cols": [
+       "Types",
+       "Cabinet size Height",
+       "Cabinet size Width",
+       "Panel Weight",
+       "Usage advice"
+      ],
+      "rows": [
+       [
+        "Light type",
+        "350-450mm",
+        "400-900mm",
+        "3.1-4.5kg",
+        "1pc"
+       ],
+       [
+        "Light type",
+        "350-500mm",
+        "700-1200mm",
+        "5.5-8.5kg",
+        "2pcs"
+       ],
+       [
+        "Heavy type",
+        "400-500mm",
+        "500-1200mm",
+        "5-6kg",
+        "1pc"
+       ],
+       [
+        "Heavy type",
+        "400-550mm",
+        "700-1500mm",
+        "9-11kg",
+        "2pcs"
+       ]
+      ]
+     }
+    },
+    {
+     "sku": "FFC01",
+     "name": "Normal Gas Spring Mini Version",
+     "table": {
+      "title": "Specification",
+      "cols": [
+       "Pressure",
+       "Tube diameter(mm)",
+       "Rod diameter(mm)",
+       "Length(mm)",
+       "Hole distance(mm)",
+       "Stroke(mm)"
+      ],
+      "rows": [
+       [
+        "60N",
+        "Φ15",
+        "Φ6",
+        "270",
+        "248",
+        "91"
+       ],
+       [
+        "80N",
+        "Φ15",
+        "Φ6",
+        "270",
+        "248",
+        "91"
+       ],
+       [
+        "100N",
+        "Φ15",
+        "Φ6",
+        "270",
+        "248",
+        "91"
+       ],
+       [
+        "120N",
+        "Φ15",
+        "Φ6",
+        "270",
+        "248",
+        "91"
+       ],
+       [
+        "150N",
+        "Φ15",
+        "Φ6",
+        "270",
+        "248",
+        "91"
+       ]
+      ]
+     }
+    },
+    {
+     "sku": "FFD01",
+     "name": "Wardrobe Support",
+     "specs": [
+      [
+       "High",
+       "80.5mm"
+      ],
+      [
+       "Width",
+       "44.3mm"
+      ],
+      [
+       "Finish",
+       "Chrome"
+      ],
+      [
+       "Material",
+       "Zinc alloy"
+      ]
+     ]
+    },
+    {
+     "sku": "FFD02",
+     "name": "Wardrobe Support",
+     "specs": [
+      [
+       "High",
+       "46mm"
+      ],
+      [
+       "Width",
+       "18.4mm"
+      ],
+      [
+       "Finish",
+       "Chrome"
+      ],
+      [
+       "Material",
+       "Zinc alloy"
+      ]
+     ]
+    },
+    {
+     "sku": "FFA01",
+     "name": "Adjustable Feet",
+     "specs": [
+      [
+       "Length",
+       "74mm"
+      ],
+      [
+       "Width",
+       "59mm"
+      ],
+      [
+       "Diameter",
+       "48mm"
+      ],
+      [
+       "Color",
+       "Black"
+      ],
+      [
+       "Material",
+       "ABS"
+      ]
+     ]
+    },
+    {
+     "sku": "FFB01",
+     "name": "Cabinet Hanger",
+     "specs": [
+      [
+       "Color",
+       "White+Zinc plated"
+      ],
+      [
+       "Material",
+       "Steel / Plastic"
+      ]
+     ]
+    },
+    {
+     "sku": "FFB02",
+     "name": "Concealed Cabinet Hanger",
+     "specs": [
+      [
+       "Color",
+       "White+Zinc plated/Grey+Zinc plated"
+      ],
+      [
+       "Material",
+       "Steel / Plastic"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "furniture-connector",
+   "cover": "FCS02",
+   "name": "Furniture Connector",
+   "es": "Conectores para Muebles",
+   "fr": "Connecteurs de Meuble",
+   "desc": "Cam lock connectors and shelf supports for panel furniture assembly.",
+   "desc_es": "Conectores de leva y soportes de estante para el montaje de muebles de tablero.",
+   "desc_fr": "Connecteurs à came et supports d'étagère pour l'assemblage de meubles en panneaux.",
+   "products": [
+    {
+     "sku": "FCE01",
+     "name": "3-in-1 Cam Lock Furniture Connector",
+     "specs": [
+      [
+       "Panel thicknes",
+       "15mm"
+      ],
+      [
+       "High",
+       "11.5mm"
+      ],
+      [
+       "Material",
+       "Zinc alloy"
+      ],
+      [
+       "Finsh",
+       "Zinc plated"
+      ]
+     ]
+    },
+    {
+     "sku": "FCS02",
+     "name": "Shelf Support",
+     "specs": [
+      [
+       "High",
+       "12.3mm"
+      ],
+      [
+       "Material",
+       "Plastic / Zinc alloy"
+      ],
+      [
+       "Finsh",
+       "Black"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

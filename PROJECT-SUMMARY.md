@@ -286,7 +286,7 @@ git push -u origin main
 
 ## 📞 联系方式（在网站中）
 
-- **邮箱**: info@fixora.com
+- **邮箱**: service@fixora-hardware.com
 - **电话**: 1-800-FIXORA-1
 - **地址**: FIXORA Distribution Center, 1000 Industrial Way, Los Angeles, CA 90001, USA
 

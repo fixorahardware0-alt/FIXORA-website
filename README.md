@@ -177,8 +177,8 @@ python -m http.server 8000
 ## 📞 支持
 
 网站包含以下联系方式：
-- **销售**: sales@fixora.com | 1-800-FIXORA-1
-- **支持**: support@fixora.com | 1-800-FIXORA-2
+- **销售**: service@fixora-hardware.com | 1-800-FIXORA-1
+- **支持**: service@fixora-hardware.com | 1-800-FIXORA-2
 - **地址**: FIXORA Distribution Center, 1000 Industrial Way, Los Angeles, CA 90001, USA
 
 ---

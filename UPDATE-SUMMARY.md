@@ -4,7 +4,7 @@
 
 ### 1️⃣ 联系方式更新
 - **名字**: Mike
-- **邮箱**: mike@probuildercorp.com
+- **邮箱**: service@fixora-hardware.com
 - **地址**: 1822 East Francis Street, Ontario, CA 91761
 - **营业时间**: Monday - Friday, 8am - 5pm (Pacific Time)
 
@@ -144,7 +144,7 @@ python -m http.server 8000
 | 信息 | 内容 |
 |------|------|
 | 联系人 | Mike |
-| 邮箱 | mike@probuildercorp.com |
+| 邮箱 | service@fixora-hardware.com |
 | 地址 | 1822 East Francis Street, Ontario, CA 91761 |
 | 时间 | Mon-Fri, 8am-5pm PT |
 
