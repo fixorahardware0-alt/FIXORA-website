@@ -175,7 +175,8 @@ section { padding: 5.5rem 0; }
 .resource-card p { color: var(--text-light); line-height: 1.75; font-size: 0.97rem; margin-bottom: 2rem; flex-grow: 1; }
 .resource-card .btn { align-self: center; }
 @media (max-width: 900px) { .resource-grid { grid-template-columns: 1fr; max-width: 460px; margin: 0 auto; } }
-.catalog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; max-width: 880px; margin: 0 auto; }
+.catalog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: 1180px; margin: 0 auto; }
+@media (max-width: 1060px) { .catalog-grid { grid-template-columns: repeat(2, 1fr); max-width: 800px; } }
 @media (max-width: 760px) { .catalog-grid { grid-template-columns: 1fr; max-width: 460px; } }
 .catalog-card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; transition: all 0.3s ease; }
 .catalog-card:hover { box-shadow: 0 18px 42px rgba(0,0,0,0.1); transform: translateY(-6px); }

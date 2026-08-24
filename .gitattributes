@@ -1,0 +1,8 @@
+# Keep binary assets out of git's text diff/merge and line-ending normalization.
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.ico  binary
+*.woff  binary
+*.woff2 binary
