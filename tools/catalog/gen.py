@@ -77,7 +77,7 @@ def gen_category(nav, footer):
         n = len(s['products'])
         first = s.get('cover', s['products'][0]['sku'])
         cards.append(f'''            <a class="product-card" href="cf-{s['slug']}.html">
-                <div class="media"><img src="../{IMGDIR}/{s['slug']}/{fname(first)}.png" alt="{esc(s['name'])}" loading="lazy"></div>
+                <div class="media"><img src="../{IMGDIR}/{s['slug']}/{fname(first)}.jpg" alt="{esc(s['name'])}" loading="lazy"></div>
                 <div class="body">
                     <span class="model" {L_CAT}></span>
                     <h3 {sub_label(s)}></h3>
@@ -106,7 +106,7 @@ def gen_sub(s, nav, footer):
     for pr in s['products']:
         sku = pr['sku']
         cards.append(f'''            <a class="product-card" href="{page_of(s, sku)}">
-                <div class="media"><img src="../{IMGDIR}/{s['slug']}/{fname(sku)}.png" alt="{esc(sku)}" loading="lazy"></div>
+                <div class="media"><img src="../{IMGDIR}/{s['slug']}/{fname(sku)}.jpg" alt="{esc(sku)}" loading="lazy"></div>
                 <div class="body">
                     <h3 class="sku-name">{esc(sku)}</h3>
                     <p>{esc(pr['name'])}</p>
@@ -148,7 +148,7 @@ def spec_table(t):
 
 def gen_product(s, pr, nav, footer):
     sku = pr['sku']
-    img = f'../{IMGDIR}/{s["slug"]}/{fname(sku)}.png'
+    img = f'../{IMGDIR}/{s["slug"]}/{fname(sku)}.jpg'
     info = []
     if 'bullets' in pr:
         info.append(f'                <h2>{esc(pr.get("bullets_title", "Technical Specification"))}</h2>')
