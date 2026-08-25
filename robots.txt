@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Superseded drafts kept in the repo for reference only
+Disallow: /index_light_20260623.html
+Disallow: /index-updated.html
+Disallow: /FIXORA-single-file.html
+
+Sitemap: https://fixora-hardware.com/sitemap.xml
