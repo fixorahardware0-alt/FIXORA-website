@@ -125,7 +125,9 @@ def entry(path):
             cat = ({l: v.rsplit(' · ', 1)[0] for l, v in cat.items()}
                    if ' · ' in cat['en'] else None)
 
-    e = {'u': rel, 'k': kind, 't': name}
+    # clean URL: Vercel serves products/foo.html at /products/foo
+    url = '' if rel == 'index.html' else re.sub(r'\.html$', '', rel)
+    e = {'u': url, 'k': kind, 't': name}
     if sub and sub.get('en'):
         e['s'] = sub
     if cat:

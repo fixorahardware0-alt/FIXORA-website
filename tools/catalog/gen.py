@@ -15,7 +15,13 @@ def fname(sku):
     return sku.replace('/', '-').replace('+', '-')
 
 def page_of(sub, sku):
+    """Output filename; hrefs use link() so the .html never reaches the markup."""
     return f'cf-{sub["slug"]}-{fname(sku)}.html'
+
+
+def link(page):
+    """Vercel serves foo.html at /foo — link to the clean form."""
+    return page[:-5] if page.endswith('.html') else page
 
 def esc(s):
     return html.escape(s, quote=True)
@@ -27,13 +33,13 @@ def patch_nav(text, p):
     return text
 
 FOOT_LI_RE = re.compile(
-    r'(<li><a href="((?:\.\./)?products/)?sliding-door-hardware\.html"[^>]*></a></li>)')
+    r'(<li><a href="((?:\.\./)?products/)?sliding-door-hardware(?:\.html)?"[^>]*></a></li>)')
 
 def patch_footer(text, p):
     """Add the new category to the footer Product list (once)."""
     if 'furniture-hardware.html" data-en="Cabinet' in text:
         return text
-    href = 'products/furniture-hardware.html' if p == '' else 'furniture-hardware.html'
+    href = 'products/furniture-hardware.html' if p == '' else 'furniture-hardware'
     add = (f'<li><a href="{href}" data-en="{CAT_EN}" data-es="{CAT_ES}" '
            f'data-fr="{CAT_FR}"></a></li>')
     def rep(m):
@@ -76,7 +82,7 @@ def gen_category(nav, footer):
     for s in SUBS:
         n = len(s['products'])
         first = s.get('cover', s['products'][0]['sku'])
-        cards.append(f'''            <a class="product-card" href="cf-{s['slug']}.html">
+        cards.append(f'''            <a class="product-card" href="cf-{s['slug']}">
                 <div class="media"><img src="../{IMGDIR}/{s['slug']}/{fname(first)}.jpg" alt="{esc(s['name'])}" loading="lazy"></div>
                 <div class="body">
                     <span class="model" {L_CAT}></span>
@@ -87,7 +93,7 @@ def gen_category(nav, footer):
             </a>''')
     body = f'''    <div class="page">
         <div class="breadcrumb">
-{crumb((L_PRODUCTS, '../products.html'), (L_CAT, None))}
+{crumb((L_PRODUCTS, '../products'), (L_CAT, None))}
         </div>
         <div class="page-head">
             <span class="eyebrow" data-en="Product System" data-es="Sistema de Productos" data-fr="Système de Produits"></span>
@@ -105,7 +111,7 @@ def gen_sub(s, nav, footer):
     cards = []
     for pr in s['products']:
         sku = pr['sku']
-        cards.append(f'''            <a class="product-card" href="{page_of(s, sku)}">
+        cards.append(f'''            <a class="product-card" href="{link(page_of(s, sku))}">
                 <div class="media"><img src="../{IMGDIR}/{s['slug']}/{fname(sku)}.jpg" alt="{esc(sku)}" loading="lazy"></div>
                 <div class="body">
                     <h3 class="sku-name">{esc(sku)}</h3>
@@ -115,7 +121,7 @@ def gen_sub(s, nav, footer):
             </a>''')
     body = f'''    <div class="page">
         <div class="breadcrumb">
-{crumb((L_PRODUCTS, '../products.html'), (L_CAT, 'furniture-hardware.html'), (sub_label(s), None))}
+{crumb((L_PRODUCTS, '../products'), (L_CAT, 'furniture-hardware'), (sub_label(s), None))}
         </div>
         <div class="page-head">
             <span class="eyebrow" {L_CAT}></span>
@@ -173,13 +179,13 @@ def gen_product(s, pr, nav, footer):
     if 'notes' in pr:
         li = '\n'.join(f'                    <li>{esc(b)}</li>' for b in pr['notes'])
         info.append(f'                <ul class="spec-notes">\n{li}\n                </ul>')
-    info.append('                <a class="btn" href="../partner.html" data-en="Enquire / Become a Partner" data-es="Consultar / Asóciese" data-fr="Demander / Devenir Partenaire"></a>')
+    info.append('                <a class="btn" href="../partner" data-en="Enquire / Become a Partner" data-es="Consultar / Asóciese" data-fr="Demander / Devenir Partenaire"></a>')
 
     table = ('\n        ' + spec_table(pr['table']).strip() if 'table' in pr else '')
 
     body = f'''    <div class="page">
         <div class="breadcrumb">
-{crumb((L_PRODUCTS, '../products.html'), (L_CAT, 'furniture-hardware.html'), (sub_label(s), f'cf-{s["slug"]}.html'))}
+{crumb((L_PRODUCTS, '../products'), (L_CAT, 'furniture-hardware'), (sub_label(s), f'cf-{s["slug"]}'))}
  &nbsp;/&nbsp;
             <span>{esc(sku)}</span>
         </div>
