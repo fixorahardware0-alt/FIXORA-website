@@ -233,7 +233,7 @@ body.ss-open { overflow: hidden; }
 .group-all:hover { text-decoration: underline; }
 
 /* ---- Footer social links ---- */
-.footer-social { display: flex; gap: 0.75rem; margin-top: 1.4rem; }
-.footer-social a { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; border: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.75); transition: all 0.25s ease; }
-.footer-social a:hover { background: var(--primary-orange); border-color: var(--primary-orange); color: #fff; transform: translateY(-2px); }
-.footer-social svg { width: 16px; height: 16px; fill: currentColor; }
+.footer-social { display: flex; gap: 1.75rem; margin-top: 1.6rem; }
+.footer-social a { display: inline-flex; align-items: center; justify-content: center; color: #fff; transition: color 0.25s ease, transform 0.25s ease; }
+.footer-social a:hover { color: var(--primary-orange); transform: translateY(-2px); }
+.footer-social svg { width: 23px; height: 23px; fill: currentColor; }
